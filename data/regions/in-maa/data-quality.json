@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-07-15T20:00:27.211521+00:00",
+  "operationalStationCount": 41,
+  "lineStationMembershipCount": 43,
+  "stationCoordinatesPresent": 41,
+  "stationCoordinatesMissing": 0,
+  "gtfs": {
+    "available": false,
+    "reason": "Official CUMTA feed was not retrievable during this import."
+  },
+  "warnings": [
+    "CMRL station coordinates are parsed from the first map center in each official station page and should be cross-checked against GTFS when available.",
+    "CMRL uses separate URLs for Central and Alandur on each line; these are intentionally merged into stable interchange identities.",
+    "No proposed or under-construction alignment geometry is generated from schematic PDFs."
+  ]
+}

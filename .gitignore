@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.next/
+.vinext/
+.wrangler/
+coverage/
+*.tsbuildinfo
+__pycache__/
+*.py[cod]
+data/raw/**
+!data/raw/**/.gitkeep
+!data/raw/**/.gitignore

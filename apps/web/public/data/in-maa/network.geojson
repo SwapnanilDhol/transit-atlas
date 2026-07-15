@@ -1,0 +1,1034 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-wimco-nagar-depot-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-wimco-nagar-depot-metro",
+        "name": "Wimco Nagar Depot Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/wimco-nagar-depot-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-wimco-nagar-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-wimco-nagar-metro",
+        "name": "Wimco Nagar Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/wimco-nagar-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-thiruvotriyur-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-thiruvotriyur-metro",
+        "name": "Thiruvotriyur Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/thiruvotriyur-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-thiruvottriyur-theradi-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-thiruvottriyur-theradi-metro",
+        "name": "Thiruvottriyur Theradi Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/thiruvottriyur-theradi-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-kaladipet-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-kaladipet-metro",
+        "name": "Kaladipet Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/kaladipet-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-tollgate-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-tollgate-metro",
+        "name": "Tollgate Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/tollgate-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-new-washermenpet-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-new-washermenpet-metro",
+        "name": "New Washermenpet Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/new-washermenpet-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-tondiarpet-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-tondiarpet-metro",
+        "name": "Tondiarpet Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/tondiarpet-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-sir-thiyagaraya-college-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-sir-thiyagaraya-college-metro",
+        "name": "Sir Thiyagaraya College Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/sir-thiyagaraya-college-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-washermenpet-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-washermenpet-metro",
+        "name": "Washermenpet Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/washermenpet-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-mannadi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-mannadi",
+        "name": "Mannadi",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/mannadi/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-highcourt",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-highcourt",
+        "name": "Highcourt",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/highcourt/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro",
+        "name": "Puratchi Thalaivar Dr. M.G.Ramachandran Central Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/puratchi-thalaivar-dr-m-g-ramachandran-central-metro/",
+        "lineIds": [
+          "cmrl-blue",
+          "cmrl-green"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue",
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-government-estate",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-government-estate",
+        "name": "Government Estate",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/government-estate/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-lic",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-lic",
+        "name": "LIC",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/lic/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-thousand-lights",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-thousand-lights",
+        "name": "Thousand Lights",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/thousand-lights/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-ag-dms",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-ag-dms",
+        "name": "AG – DMS",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/ag-dms/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-teynampet",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-teynampet",
+        "name": "Teynampet",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/teynampet/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-nandanam",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-nandanam",
+        "name": "Nandanam",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/nandanam/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-saidapet-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-saidapet-metro",
+        "name": "Saidapet Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/saidapet-metro/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-little-mount",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-little-mount",
+        "name": "Little Mount",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/little-mount/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-guindy",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-guindy",
+        "name": "Guindy",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/guindy/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-arignar-anna-alandur-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-arignar-anna-alandur-metro",
+        "name": "Arignar Anna Alandur Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/arignar-anna-alandur-metro/",
+        "lineIds": [
+          "cmrl-blue",
+          "cmrl-green"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue",
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-ota-nanganallur-road",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-ota-nanganallur-road",
+        "name": "OTA-Nanganallur Road",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/ota-nanganallur-road/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-meenambakkam",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-meenambakkam",
+        "name": "Meenambakkam",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/meenambakkam/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-chennai-international-airport",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-chennai-international-airport",
+        "name": "Chennai International Airport",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/chennai-international-airport/",
+        "lineIds": [
+          "cmrl-blue"
+        ],
+        "line": "blue",
+        "lines": [
+          "blue"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-egmore-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-egmore-metro",
+        "name": "Egmore Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/egmore-metro/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-nehru-park",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-nehru-park",
+        "name": "Nehru Park",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/nehru-park/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-kilpauk",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-kilpauk",
+        "name": "Kilpauk",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/kilpauk/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-pachaiyappas-college",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-pachaiyappas-college",
+        "name": "Pachaiyappa’s College",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/pachaiyappas-college/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-shenoy-nagar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-shenoy-nagar",
+        "name": "Shenoy Nagar",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/shenoy-nagar/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-anna-nagar-east",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-anna-nagar-east",
+        "name": "Anna Nagar East",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/anna-nagar-east/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-anna-nagar-tower",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-anna-nagar-tower",
+        "name": "Anna Nagar Tower",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/anna-nagar-tower/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-thirumangalam",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-thirumangalam",
+        "name": "Thirumangalam",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/thirumangalam/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-koyambedu",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-koyambedu",
+        "name": "Koyambedu",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/koyambedu/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro",
+        "name": "Puratchi Thalaivi Dr.J.Jayalalithaa CMBT Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-arumbakkam",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-arumbakkam",
+        "name": "Arumbakkam",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/arumbakkam/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-vadapalani",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-vadapalani",
+        "name": "Vadapalani",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/vadapalani/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-ashok-nagar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-ashok-nagar",
+        "name": "Ashok Nagar",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/ashok-nagar/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-ekkattuthangal",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-ekkattuthangal",
+        "name": "Ekkattuthangal",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/ekkattuthangal/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-st-thomas-mount-metro",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.26531667963266,
+          13.072943044121454
+        ]
+      },
+      "properties": {
+        "id": "in-maa-cmrl-st-thomas-mount-metro",
+        "name": "St. Thomas Mount Metro",
+        "operatorId": "in-maa-cmrl",
+        "status": "operational",
+        "sourceUrl": "https://chennaimetrorail.org/station-information/st-thomas-mount-metro/",
+        "lineIds": [
+          "cmrl-green"
+        ],
+        "line": "green",
+        "lines": [
+          "green"
+        ]
+      }
+    }
+  ]
+}

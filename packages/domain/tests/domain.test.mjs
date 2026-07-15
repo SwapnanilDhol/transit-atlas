@@ -1,0 +1,53 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import {
+  infrastructureProjectSchema,
+  placeSchema,
+  regionSchema,
+  serviceTimeSchema,
+  textFor,
+} from "../dist/index.js";
+
+test("accepts a multilingual region", () => {
+  const region = regionSchema.parse({
+    id: "in.tn.chennai",
+    name: { default: "Chennai", translations: { ta: "சென்னை" } },
+    kind: "city",
+    countryCode: "in",
+    timezone: "Asia/Kolkata",
+    languages: ["ta", "en-IN"],
+  });
+  assert.equal(region.countryCode, "IN");
+  assert.equal(textFor(region.name, ["ta-IN"]), "சென்னை");
+});
+
+test("distinguishes a platform from its parent station", () => {
+  const platform = placeSchema.parse({
+    id: "in.cmrl.central.p1",
+    parentId: "in.cmrl.central",
+    regionId: "in.tn.chennai",
+    name: { default: "Platform 1" },
+    kind: "platform",
+    location: { type: "Point", coordinates: [80.2729, 13.0815] },
+  });
+  assert.equal(platform.kind, "platform");
+  assert.equal(platform.accessibility, "unknown");
+});
+
+test("supports post-midnight transit service times", () => {
+  assert.equal(serviceTimeSchema.parse("25:15:00"), "25:15:00");
+  assert.throws(() => serviceTimeSchema.parse("48:15:00"));
+});
+
+test("retains declared precision for future geometry", () => {
+  const project = infrastructureProjectSchema.parse({
+    id: "in.cmrl.phase-2",
+    regionIds: ["in.tn.chennai"],
+    name: { default: "Chennai Metro Phase II" },
+    mode: "metro",
+    kind: "new-line",
+    status: "under-construction",
+    geometryPrecision: "official-schematic",
+  });
+  assert.equal(project.geometryPrecision, "official-schematic");
+});

@@ -1,0 +1,577 @@
+{
+  "schemaVersion": "0.1.0",
+  "region": {
+    "id": "in-maa",
+    "name": "Chennai",
+    "countryCode": "IN",
+    "timezone": "Asia/Kolkata"
+  },
+  "operators": [
+    {
+      "id": "in-maa-cmrl",
+      "name": "Chennai Metro Rail Limited",
+      "shortName": "CMRL",
+      "mode": "metro"
+    }
+  ],
+  "lines": [
+    {
+      "id": "cmrl-blue",
+      "name": "Blue Line",
+      "officialCorridor": "Corridor 1",
+      "color": "#0078C8",
+      "status": "operational",
+      "stationIds": [
+        "in-maa-cmrl-wimco-nagar-depot-metro",
+        "in-maa-cmrl-wimco-nagar-metro",
+        "in-maa-cmrl-thiruvotriyur-metro",
+        "in-maa-cmrl-thiruvottriyur-theradi-metro",
+        "in-maa-cmrl-kaladipet-metro",
+        "in-maa-cmrl-tollgate-metro",
+        "in-maa-cmrl-new-washermenpet-metro",
+        "in-maa-cmrl-tondiarpet-metro",
+        "in-maa-cmrl-sir-thiyagaraya-college-metro",
+        "in-maa-cmrl-washermenpet-metro",
+        "in-maa-cmrl-mannadi",
+        "in-maa-cmrl-highcourt",
+        "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro",
+        "in-maa-cmrl-government-estate",
+        "in-maa-cmrl-lic",
+        "in-maa-cmrl-thousand-lights",
+        "in-maa-cmrl-ag-dms",
+        "in-maa-cmrl-teynampet",
+        "in-maa-cmrl-nandanam",
+        "in-maa-cmrl-saidapet-metro",
+        "in-maa-cmrl-little-mount",
+        "in-maa-cmrl-guindy",
+        "in-maa-cmrl-arignar-anna-alandur-metro",
+        "in-maa-cmrl-ota-nanganallur-road",
+        "in-maa-cmrl-meenambakkam",
+        "in-maa-cmrl-chennai-international-airport"
+      ]
+    },
+    {
+      "id": "cmrl-green",
+      "name": "Green Line",
+      "officialCorridor": "Corridor 2",
+      "color": "#009B77",
+      "status": "operational",
+      "stationIds": [
+        "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro",
+        "in-maa-cmrl-egmore-metro",
+        "in-maa-cmrl-nehru-park",
+        "in-maa-cmrl-kilpauk",
+        "in-maa-cmrl-pachaiyappas-college",
+        "in-maa-cmrl-shenoy-nagar",
+        "in-maa-cmrl-anna-nagar-east",
+        "in-maa-cmrl-anna-nagar-tower",
+        "in-maa-cmrl-thirumangalam",
+        "in-maa-cmrl-koyambedu",
+        "in-maa-cmrl-puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro",
+        "in-maa-cmrl-arumbakkam",
+        "in-maa-cmrl-vadapalani",
+        "in-maa-cmrl-ashok-nagar",
+        "in-maa-cmrl-ekkattuthangal",
+        "in-maa-cmrl-arignar-anna-alandur-metro",
+        "in-maa-cmrl-st-thomas-mount-metro"
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "in-maa-cmrl-wimco-nagar-depot-metro",
+      "name": "Wimco Nagar Depot Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/wimco-nagar-depot-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-wimco-nagar-metro",
+      "name": "Wimco Nagar Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/wimco-nagar-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-thiruvotriyur-metro",
+      "name": "Thiruvotriyur Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thiruvotriyur-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-thiruvottriyur-theradi-metro",
+      "name": "Thiruvottriyur Theradi Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thiruvottriyur-theradi-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-kaladipet-metro",
+      "name": "Kaladipet Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/kaladipet-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-tollgate-metro",
+      "name": "Tollgate Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/tollgate-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-new-washermenpet-metro",
+      "name": "New Washermenpet Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/new-washermenpet-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-tondiarpet-metro",
+      "name": "Tondiarpet Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/tondiarpet-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-sir-thiyagaraya-college-metro",
+      "name": "Sir Thiyagaraya College Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/sir-thiyagaraya-college-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-washermenpet-metro",
+      "name": "Washermenpet Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/washermenpet-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-mannadi",
+      "name": "Mannadi",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/mannadi/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-highcourt",
+      "name": "Highcourt",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/highcourt/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro",
+      "name": "Puratchi Thalaivar Dr. M.G.Ramachandran Central Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/puratchi-thalaivar-dr-m-g-ramachandran-central-metro/",
+      "lineIds": [
+        "cmrl-blue",
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-government-estate",
+      "name": "Government Estate",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/government-estate/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-lic",
+      "name": "LIC",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/lic/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-thousand-lights",
+      "name": "Thousand Lights",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thousand-lights/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-ag-dms",
+      "name": "AG – DMS",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ag-dms/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-teynampet",
+      "name": "Teynampet",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/teynampet/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-nandanam",
+      "name": "Nandanam",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/nandanam/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-saidapet-metro",
+      "name": "Saidapet Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/saidapet-metro/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-little-mount",
+      "name": "Little Mount",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/little-mount/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-guindy",
+      "name": "Guindy",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/guindy/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-arignar-anna-alandur-metro",
+      "name": "Arignar Anna Alandur Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/arignar-anna-alandur-metro/",
+      "lineIds": [
+        "cmrl-blue",
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-ota-nanganallur-road",
+      "name": "OTA-Nanganallur Road",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ota-nanganallur-road/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-meenambakkam",
+      "name": "Meenambakkam",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/meenambakkam/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-chennai-international-airport",
+      "name": "Chennai International Airport",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/chennai-international-airport/",
+      "lineIds": [
+        "cmrl-blue"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-egmore-metro",
+      "name": "Egmore Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/egmore-metro/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-nehru-park",
+      "name": "Nehru Park",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/nehru-park/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-kilpauk",
+      "name": "Kilpauk",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/kilpauk/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-pachaiyappas-college",
+      "name": "Pachaiyappa’s College",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/pachaiyappas-college/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-shenoy-nagar",
+      "name": "Shenoy Nagar",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/shenoy-nagar/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-anna-nagar-east",
+      "name": "Anna Nagar East",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/anna-nagar-east/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-anna-nagar-tower",
+      "name": "Anna Nagar Tower",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/anna-nagar-tower/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-thirumangalam",
+      "name": "Thirumangalam",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thirumangalam/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-koyambedu",
+      "name": "Koyambedu",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/koyambedu/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro",
+      "name": "Puratchi Thalaivi Dr.J.Jayalalithaa CMBT Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-arumbakkam",
+      "name": "Arumbakkam",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/arumbakkam/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-vadapalani",
+      "name": "Vadapalani",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/vadapalani/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-ashok-nagar",
+      "name": "Ashok Nagar",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ashok-nagar/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-ekkattuthangal",
+      "name": "Ekkattuthangal",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ekkattuthangal/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    },
+    {
+      "id": "in-maa-cmrl-st-thomas-mount-metro",
+      "name": "St. Thomas Mount Metro",
+      "operatorId": "in-maa-cmrl",
+      "status": "operational",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/st-thomas-mount-metro/",
+      "lineIds": [
+        "cmrl-green"
+      ],
+      "longitude": 80.26531667963266,
+      "latitude": 13.072943044121454
+    }
+  ],
+  "generatedAt": "2026-07-15T20:00:27.211521+00:00"
+}

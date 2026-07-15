@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "0.1.0",
+  "regionId": "in-maa",
+  "sources": [
+    {
+      "id": "cumta-static-gtfs-cmrl",
+      "publisher": "Chennai Unified Metropolitan Transport Authority",
+      "title": "CMRL static GTFS",
+      "landingPageUrl": "https://opendata.cumta.org/",
+      "format": "GTFS Schedule ZIP",
+      "authority": "official",
+      "license": {
+        "status": "unknown",
+        "warning": "The portal advertises downloadable data, but a machine-readable license or terms file has not yet been captured. Do not assume redistribution rights."
+      },
+      "retrievalStatus": "temporarily-unavailable",
+      "retrievalNote": "On 2026-07-16 the official host returned DNS NXDOMAIN. The importer performs runtime link discovery and supports an explicitly verified official URL."
+    },
+    {
+      "id": "cmrl-station-information",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "CMRL station information",
+      "url": "https://chennaimetrorail.org/",
+      "format": "HTML",
+      "authority": "official",
+      "license": {
+        "status": "unknown",
+        "warning": "No explicit open-data license was found. Store derived facts with attribution; do not redistribute page assets."
+      }
+    },
+    {
+      "id": "cmrl-project-status",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "Project Status",
+      "url": "https://chennaimetrorail.org/project-status/",
+      "format": "HTML",
+      "authority": "official",
+      "license": {"status": "unknown"}
+    },
+    {
+      "id": "cmrl-phase-2-map",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "Chennai Metro Rail Phase II Map",
+      "url": "https://chennaimetrorail.org/wp-content/uploads/2025/03/Phase-II-Map-Updated-Map-PHASE-2.pdf",
+      "format": "PDF schematic",
+      "authority": "official",
+      "license": {"status": "unknown"},
+      "useConstraint": "Reference only. Do not treat schematic linework as geospatial alignment geometry."
+    },
+    {
+      "id": "cmrl-phase-2-dpr",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "Updated Detailed Project Report for Chennai Metro Rail Phase II",
+      "url": "https://chennaimetrorail.org/wp-content/uploads/2025/07/Project-DPR-for-Chennai-Metro-Rail-Phase-II.pdf",
+      "format": "PDF",
+      "authority": "official",
+      "license": {"status": "unknown"}
+    }
+  ]
+}
