@@ -14,7 +14,9 @@
         "status": "unknown",
         "warning": "MTC does not publish an explicit open-data license on the route directory. Store derived route facts with attribution; do not redistribute page assets."
       },
-      "capabilities": ["static-network"],
+      "capabilities": [
+        "static-network"
+      ],
       "limitations": [
         "Ordered stage names only: no coordinates, route shapes, trip calendars, or departure times.",
         "Stage spelling variants are normalized conservatively and may still represent duplicate physical stops."
@@ -85,7 +87,9 @@
       "url": "https://chennaimetrorail.org/project-status/",
       "format": "HTML",
       "authority": "official",
-      "license": {"status": "unknown"}
+      "license": {
+        "status": "unknown"
+      }
     },
     {
       "id": "cmrl-operating-timetable",
@@ -94,7 +98,9 @@
       "url": "https://chennaimetrorail.org/wp-content/uploads/2024/03/chennai-metro-timetable.pdf",
       "format": "PDF timetable",
       "authority": "official",
-      "license": {"status": "unknown"},
+      "license": {
+        "status": "unknown"
+      },
       "useConstraint": "Headway-based estimates only; this is not a vehicle-position or delay feed."
     },
     {
@@ -105,7 +111,9 @@
       "format": "PDF press release",
       "authority": "official",
       "effectiveDate": "2026-01-07",
-      "license": {"status": "unknown"}
+      "license": {
+        "status": "unknown"
+      }
     },
     {
       "id": "cmrl-phase-2-map",
@@ -114,7 +122,9 @@
       "url": "https://chennaimetrorail.org/wp-content/uploads/2025/03/Phase-II-Map-Updated-Map-PHASE-2.pdf",
       "format": "PDF schematic",
       "authority": "official",
-      "license": {"status": "unknown"},
+      "license": {
+        "status": "unknown"
+      },
       "useConstraint": "Reference only. Do not treat schematic linework as geospatial alignment geometry."
     },
     {
@@ -124,7 +134,35 @@
       "url": "https://chennaimetrorail.org/wp-content/uploads/2025/07/Project-DPR-for-Chennai-Metro-Rail-Phase-II.pdf",
       "format": "PDF",
       "authority": "official",
-      "license": {"status": "unknown"}
+      "license": {
+        "status": "unknown"
+      }
+    },
+    {
+      "id": "openstreetmap-cmrl-purple",
+      "publisher": "OpenStreetMap contributors",
+      "title": "Chennai Metro Line 3 under-construction route relation",
+      "url": "https://www.openstreetmap.org/relation/12824257",
+      "format": "OSM JSON",
+      "authority": "community-maintained geospatial data",
+      "relationId": 12824257,
+      "license": {
+        "status": "open",
+        "name": "Open Database License (ODbL) 1.0",
+        "url": "https://www.openstreetmap.org/copyright"
+      }
+    },
+    {
+      "id": "contributed-cmrl-purple-metadata",
+      "publisher": "Transit Atlas contributor",
+      "title": "Purple Line ordered station metadata supplied 2026-07-16",
+      "url": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "format": "JSON",
+      "authority": "contributed; not independently verified at record level",
+      "useConstraint": "Google-derived and interpolated coordinates were discarded. Names, Tamil labels, layouts, and connection claims require reconciliation with current official CMRL sources.",
+      "license": {
+        "status": "unknown"
+      }
     }
   ]
 }

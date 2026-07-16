@@ -343,6 +343,29 @@
       "retrievedAt": "2026-07-16T07:04:55.017924+00:00",
       "bytes": 109430,
       "sha256": "ac71d576047b066981884daf5b7538466b6db09abebf939f5b5eb0810e9c2aea"
+    },
+    {
+      "path": "osm/purple-12824257.json",
+      "sourceUrl": "https://www.openstreetmap.org/relation/12824257",
+      "retrievedAt": "2026-07-16T14:25:36.736507+00:00",
+      "bytes": 54851,
+      "sha256": "645f1b7c10a60c9c5e342e1fd5df39524098f6f858771e41989d1aef7083e2f3",
+      "contentType": "application/json; charset=utf-8"
+    }
+  ],
+  "contributions": [
+    {
+      "file": "chennai_metro_purple_line.json",
+      "sha256": "53c606636c6902f2298922a33c86f90e88af7a9712fb8efb6f8e5b4c6980a921",
+      "receivedAt": "2026-07-16",
+      "coordinatesDiscarded": true,
+      "retainedFields": [
+        "order",
+        "name",
+        "name_ta",
+        "layout",
+        "connections"
+      ]
     }
   ]
 }

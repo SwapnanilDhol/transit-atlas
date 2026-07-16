@@ -14,6 +14,7 @@ Transit Atlas begins with Chennai and Bengaluru, but the repository is organized
 - Switchable Chennai and Bengaluru regional contexts
 - Operational Bengaluru Purple, Green, and Yellow lines with 84 mapped stations
 - Operational and future Chennai Metro lines
+- Under-construction Chennai Purple Line alignment with 48 contributed station records and explicit map-confidence labels
 - Searchable station and MTC route directories
 - Readable CMRL weekday, Saturday, and Sunday/holiday timetables
 - 686 MTC routes and 1,538 normalized stages

@@ -7,6 +7,22 @@ python3 tooling/importers/chennai/fetch.py
 python3 tooling/importers/chennai/normalize.py
 ```
 
+Corridor 3 / Purple Line is an explicit enrichment pass because its contributed
+station metadata and under-construction OSM geometry have different provenance
+from the operational import:
+
+```sh
+python3 tooling/importers/chennai/fetch_osm_purple.py
+python3 tooling/importers/chennai/integrate_purple.py /path/to/chennai_metro_purple_line.json
+```
+
+The integration discards every coordinate in the contributed file. Its own
+provenance note identifies Google Places and interpolation, which are not
+redistributed. The plotted alignment and two currently mapped construction
+station points come exclusively from OpenStreetMap relation 12824257 under
+ODbL. The remaining contributed records supply an ordered sidebar list, Tamil
+labels, layout, and connection claims pending official record-level review.
+
 MTC buses are a separate import so a temporary outage or page change cannot
 invalidate the metro bundle:
 

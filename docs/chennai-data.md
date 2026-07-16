@@ -11,6 +11,10 @@ The generated files in `data/regions/in-maa/modes/metro/` contain:
 
 - 41 unique operational CMRL stations;
 - 26 Blue Line station memberships and 17 Green Line memberships;
+- an ODbL-attributed under-construction Corridor 3 alignment from OpenStreetMap;
+- 48 contributed Purple Line station records with Tamil names, underground or
+  elevated layout, and connection notes, of which 2 currently have reusable
+  OSM station coordinates;
 - the two shared interchange identities (Central and Alandur), merged from the
   line-specific URLs used by the CMRL site;
 - 41 station point coordinates read from the map center embedded in each
@@ -19,12 +23,31 @@ The generated files in `data/regions/in-maa/modes/metro/` contain:
 - provenance, retrieval timestamps, SHA-256 checksums, source status, and
   quality warnings.
 
-`modes/metro/network.geojson` is the client-facing map layer. It contains verified
-operational station `Point` features only. Its properties include `line`,
-`lines`, `lineIds`, and `status`. It intentionally contains no `LineString`
-features: CUMTA's official GTFS was unavailable during this run, and tracing a
-schematic CMRL PDF would create false precision. The web map should treat the
-absence of line geometry as a known data state, not synthesize an alignment.
+`modes/metro/network.geojson` is the client-facing map layer. Operational Blue
+and Green geometry and the under-construction Purple alignment come from
+attributed OpenStreetMap route relations. Its properties include `line`,
+`lines`, `lineIds`, and `status`. The official schematic CMRL PDF is never
+traced into geographic coordinates.
+
+### Contributed Purple Line metadata
+
+On 2026-07-16 a contributor supplied an ordered JSON file containing 48 Purple
+Line station records, Tamil labels, layout, connection claims, and approximate
+coordinates. The file's own note says those coordinates were geocoded through
+Google Places, with some locations interpolated. All contributed coordinates
+were therefore discarded before normalization.
+
+The map instead uses [OpenStreetMap relation 12824257](https://www.openstreetmap.org/relation/12824257)
+for the approximate construction alignment. Only Madhavaram Milk Colony and
+Sholinganallur currently match station nodes in that relation, so the interface
+truthfully distinguishes `2 mapped` from `48 listed`.
+
+Current official CMRL project status reports Corridor 3 as 45.8 km with 50
+stations, while the contributed JSON contains 48. The app retains the official
+total and labels the contributed list as partial pending reconciliation. The
+JSON's sectional 2027 opening claims and DMRC operator claim are not published
+because they conflict with or are unsupported by the current official source,
+which gives Phase II completion as the end of 2028.
 
 ## Official sources
 
@@ -72,6 +95,8 @@ installation:
 ```sh
 python3 tooling/importers/chennai/fetch.py
 python3 tooling/importers/chennai/normalize.py
+python3 tooling/importers/chennai/fetch_osm_purple.py
+python3 tooling/importers/chennai/integrate_purple.py /path/to/chennai_metro_purple_line.json
 ```
 
 Useful safeguards:
@@ -102,12 +127,18 @@ that contributed to the generated dataset.
   identity with two line memberships in the normalized model.
 - The Phase II PDF is a schematic, not a georeferenced GIS dataset. It is never
   traced into GeoJSON.
+- Purple Line construction geometry is community-maintained OSM data, not
+  official engineering or survey geometry.
+- Contributed Purple Line coordinates are never retained or redistributed;
+  only OSM-matched station points appear on the map.
+- Purple Line Tamil names, layout, and connections require record-level
+  reconciliation with a current official machine-readable source.
 - Phase II target dates are projections and must retain their source and
   year-level precision.
 - No GTFS-Realtime endpoint has been verified. The app must not imply live train
   positions, live arrivals, or disruptions from this static import.
-- English names reflect current official CMRL page text. Tamil names and other
-  localized aliases require a separately attributable official source.
+- Operational English names reflect current official CMRL page text. Purple
+  Line localized aliases are explicitly marked as contributed and unverified.
 - Source HTML can change without notice. The normalizer asserts the expected 43
   line/station memberships and fails loudly if the CMRL page structure or count
   changes.

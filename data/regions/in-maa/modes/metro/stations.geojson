@@ -863,6 +863,76 @@
           "cmrl-green"
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-madhavaram-milk-colony",
+      "properties": {
+        "id": "in-maa-cmrl-madhavaram-milk-colony",
+        "name": "Madhavaram Milk Colony",
+        "nameTranslations": {
+          "ta": "மாதவரம் பால் பண்ணை"
+        },
+        "operatorId": "in-maa-cmrl",
+        "status": "under-construction",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+        "lineIds": [
+          "cmrl-purple"
+        ],
+        "order": 1,
+        "layout": "underground",
+        "connections": [
+          "Red Line (Under Construction)"
+        ],
+        "metadataConfidence": "contributed-unverified",
+        "geometrySourceUrl": "https://www.openstreetmap.org/node/14018223514",
+        "line": "purple",
+        "lines": [
+          "purple"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2414206,
+          13.1496674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "in-maa-cmrl-sholinganallur",
+      "properties": {
+        "id": "in-maa-cmrl-sholinganallur",
+        "name": "Sholinganallur",
+        "nameTranslations": {
+          "ta": "சோழிங்கநல்லூர்"
+        },
+        "operatorId": "in-maa-cmrl",
+        "status": "under-construction",
+        "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+        "lineIds": [
+          "cmrl-purple"
+        ],
+        "order": 38,
+        "layout": "elevated",
+        "connections": [
+          "Red Line (Under Construction)"
+        ],
+        "metadataConfidence": "contributed-unverified",
+        "geometrySourceUrl": "https://www.openstreetmap.org/node/14018223515",
+        "line": "purple",
+        "lines": [
+          "purple"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2279647,
+          12.9009583
+        ]
+      }
     }
   ]
 }

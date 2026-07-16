@@ -75,6 +75,73 @@
         "in-maa-cmrl-arignar-anna-alandur-metro",
         "in-maa-cmrl-st-thomas-mount-metro"
       ]
+    },
+    {
+      "id": "cmrl-purple",
+      "name": "Purple Line",
+      "officialCorridor": "Corridor 3",
+      "color": "#800080",
+      "status": "under-construction",
+      "stationIds": [
+        "in-maa-cmrl-madhavaram-milk-colony",
+        "in-maa-cmrl-madhavaram-high-road",
+        "in-maa-cmrl-moolakadai",
+        "in-maa-cmrl-sembiyum",
+        "in-maa-cmrl-perambur-market",
+        "in-maa-cmrl-perambur",
+        "in-maa-cmrl-ayanavaram",
+        "in-maa-cmrl-otteri",
+        "in-maa-cmrl-pattalam",
+        "in-maa-cmrl-perambur-barracks-road",
+        "in-maa-cmrl-purasaiwakkam",
+        "in-maa-cmrl-kellys",
+        "in-maa-cmrl-kilpauk",
+        "in-maa-cmrl-chetpet",
+        "in-maa-cmrl-sterling-road",
+        "in-maa-cmrl-nungambakkam",
+        "in-maa-cmrl-anna-flyover",
+        "in-maa-cmrl-thousand-lights",
+        "in-maa-cmrl-royapettah",
+        "in-maa-cmrl-dr-radhakrishnan-salai",
+        "in-maa-cmrl-thirumayilai",
+        "in-maa-cmrl-mandaiveli",
+        "in-maa-cmrl-greenways-road",
+        "in-maa-cmrl-adyar-junction",
+        "in-maa-cmrl-adyar-depot",
+        "in-maa-cmrl-indira-nagar",
+        "in-maa-cmrl-thiruvanmiyur",
+        "in-maa-cmrl-taramani",
+        "in-maa-cmrl-nehru-nagar",
+        "in-maa-cmrl-kandanchavadi",
+        "in-maa-cmrl-perungudi",
+        "in-maa-cmrl-thoraipakkam",
+        "in-maa-cmrl-mettukuppam",
+        "in-maa-cmrl-ptc-colony",
+        "in-maa-cmrl-okkiyampet",
+        "in-maa-cmrl-karapakkam",
+        "in-maa-cmrl-okkiyam-thoraipakkam",
+        "in-maa-cmrl-sholinganallur",
+        "in-maa-cmrl-sholinganallur-lake-i",
+        "in-maa-cmrl-sholinganallur-lake-ii",
+        "in-maa-cmrl-semmancheri-depot",
+        "in-maa-cmrl-semmancheri-i",
+        "in-maa-cmrl-semmancheri-ii",
+        "in-maa-cmrl-gandhi-nagar",
+        "in-maa-cmrl-navallur",
+        "in-maa-cmrl-siruseri",
+        "in-maa-cmrl-sipcot-1",
+        "in-maa-cmrl-sipcot-2"
+      ],
+      "terminals": [
+        "Madhavaram Milk Colony",
+        "Siruseri SIPCOT II"
+      ],
+      "lengthKm": 45.8,
+      "officialStationCount": 50,
+      "contributedStationCount": 48,
+      "stationListCompleteness": "partial-pending-official-reconciliation",
+      "sourceUrl": "https://chennaimetrorail.org/project-status/",
+      "geometrySourceUrl": "https://www.openstreetmap.org/relation/12824257"
     }
   ],
   "stations": [
@@ -571,7 +638,850 @@
       ],
       "longitude": 80.1983815,
       "latitude": 12.9950171
+    },
+    {
+      "id": "in-maa-cmrl-madhavaram-milk-colony",
+      "name": "Madhavaram Milk Colony",
+      "nameTranslations": {
+        "ta": "மாதவரம் பால் பண்ணை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 1,
+      "layout": "underground",
+      "connections": [
+        "Red Line (Under Construction)"
+      ],
+      "metadataConfidence": "contributed-unverified",
+      "longitude": 80.2414206,
+      "latitude": 13.1496674,
+      "geometrySourceUrl": "https://www.openstreetmap.org/node/14018223514"
+    },
+    {
+      "id": "in-maa-cmrl-madhavaram-high-road",
+      "name": "Madhavaram High Road",
+      "nameTranslations": {
+        "ta": "மாதவரம் நெடுஞ்சாலை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 2,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-moolakadai",
+      "name": "Moolakadai",
+      "nameTranslations": {
+        "ta": "மூலக்கடை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 3,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-sembiyum",
+      "name": "Sembiyum",
+      "nameTranslations": {
+        "ta": "செம்பியம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 4,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-perambur-market",
+      "name": "Perambur Market",
+      "nameTranslations": {
+        "ta": "பெரம்பூர் அங்காடி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 5,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-perambur",
+      "name": "Perambur",
+      "nameTranslations": {
+        "ta": "பெரம்பூர்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 6,
+      "layout": "underground",
+      "connections": [
+        "Perambur (West Line)"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-ayanavaram",
+      "name": "Ayanavaram",
+      "nameTranslations": {
+        "ta": "அயனாவரம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 7,
+      "layout": "underground",
+      "connections": [
+        "Ayanavaram MTC Bus Depot"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-otteri",
+      "name": "Otteri",
+      "nameTranslations": {
+        "ta": "ஓட்டேரி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 8,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-pattalam",
+      "name": "Pattalam",
+      "nameTranslations": {
+        "ta": "பட்டாளம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 9,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-perambur-barracks-road",
+      "name": "Perambur Barracks Road",
+      "nameTranslations": {
+        "ta": "பெரம்பூர் பேரக்ஸ் சாலை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 10,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-purasaiwakkam",
+      "name": "Purasaiwakkam",
+      "nameTranslations": {
+        "ta": "புரசைவாக்கம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 11,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-kellys",
+      "name": "Kellys",
+      "nameTranslations": {
+        "ta": "கெல்லீஸ்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 12,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-kilpauk",
+      "name": "Kilpauk",
+      "nameTranslations": {
+        "ta": "கீழ்ப்பாக்கம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 13,
+      "layout": "underground",
+      "connections": [
+        "Green Line"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-chetpet",
+      "name": "Chetpet",
+      "nameTranslations": {
+        "ta": "சேத்துப்பட்டு"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 14,
+      "layout": "underground",
+      "connections": [
+        "Chetpet (South Line)"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-sterling-road",
+      "name": "Sterling Road",
+      "nameTranslations": {
+        "ta": "ஸ்டெர்லிங் சாலை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 15,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-nungambakkam",
+      "name": "Nungambakkam",
+      "nameTranslations": {
+        "ta": "நுங்கம்பாக்கம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 16,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-anna-flyover",
+      "name": "Anna Flyover",
+      "nameTranslations": {
+        "ta": "அண்ணா மேம்பாலம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 17,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-thousand-lights",
+      "name": "Thousand Lights",
+      "nameTranslations": {
+        "ta": "ஆயிரம் விளக்கு"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 18,
+      "layout": "underground",
+      "connections": [
+        "Blue Line"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-royapettah",
+      "name": "Royapettah",
+      "nameTranslations": {
+        "ta": "ராயப்பேட்டை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 19,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-dr-radhakrishnan-salai",
+      "name": "Dr. Radhakrishnan Salai",
+      "nameTranslations": {
+        "ta": "டாக்டர் ராதாகிருஷ்ணன் சாலை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 20,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-thirumayilai",
+      "name": "Thirumayilai",
+      "nameTranslations": {
+        "ta": "திருமயிலை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 21,
+      "layout": "underground",
+      "connections": [
+        "Thirumayilai (Chennai MRTS)",
+        "Yellow Line (Under Construction)"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-mandaiveli",
+      "name": "Mandaiveli",
+      "nameTranslations": {
+        "ta": "மந்தைவெளி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 22,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-greenways-road",
+      "name": "Greenways Road",
+      "nameTranslations": {
+        "ta": "பசுமைவழிச் சாலை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 23,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-adyar-junction",
+      "name": "Adyar Junction",
+      "nameTranslations": {
+        "ta": "அடையாறு சந்திப்பு"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 24,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-adyar-depot",
+      "name": "Adyar Depot",
+      "nameTranslations": {
+        "ta": "அடையாறு பணிமனை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 25,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-indira-nagar",
+      "name": "Indira Nagar",
+      "nameTranslations": {
+        "ta": "இந்திரா நகர்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 26,
+      "layout": "underground",
+      "connections": [
+        "Indira Nagar (Chennai MRTS)"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-thiruvanmiyur",
+      "name": "Thiruvanmiyur",
+      "nameTranslations": {
+        "ta": "திருவான்மியூர்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 27,
+      "layout": "underground",
+      "connections": [
+        "Thiruvanmiyur (Chennai MRTS)"
+      ],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-taramani",
+      "name": "Taramani",
+      "nameTranslations": {
+        "ta": "தரமணி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 28,
+      "layout": "underground",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-nehru-nagar",
+      "name": "Nehru Nagar",
+      "nameTranslations": {
+        "ta": "நேரு நகர்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 29,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-kandanchavadi",
+      "name": "Kandanchavadi",
+      "nameTranslations": {
+        "ta": "கந்தன்சாவடி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 30,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-perungudi",
+      "name": "Perungudi",
+      "nameTranslations": {
+        "ta": "பெருங்குடி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 31,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-thoraipakkam",
+      "name": "Thoraipakkam",
+      "nameTranslations": {
+        "ta": "துரைப்பாக்கம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 32,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-mettukuppam",
+      "name": "Mettukuppam",
+      "nameTranslations": {
+        "ta": "மேட்டுக்குப்பம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 33,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-ptc-colony",
+      "name": "PTC Colony",
+      "nameTranslations": {
+        "ta": "பி.டி.சி. காலனி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 34,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-okkiyampet",
+      "name": "Okkiyampet",
+      "nameTranslations": {
+        "ta": "ஒக்கியம்பேட்டை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 35,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-karapakkam",
+      "name": "Karapakkam",
+      "nameTranslations": {
+        "ta": "காரப்பாக்கம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 36,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-okkiyam-thoraipakkam",
+      "name": "Okkiyam Thoraipakkam",
+      "nameTranslations": {
+        "ta": "ஒக்கியம் துரைப்பாக்கம்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 37,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-sholinganallur",
+      "name": "Sholinganallur",
+      "nameTranslations": {
+        "ta": "சோழிங்கநல்லூர்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 38,
+      "layout": "elevated",
+      "connections": [
+        "Red Line (Under Construction)"
+      ],
+      "metadataConfidence": "contributed-unverified",
+      "longitude": 80.2279647,
+      "latitude": 12.9009583,
+      "geometrySourceUrl": "https://www.openstreetmap.org/node/14018223515"
+    },
+    {
+      "id": "in-maa-cmrl-sholinganallur-lake-i",
+      "name": "Sholinganallur Lake I",
+      "nameTranslations": {
+        "ta": "சோழிங்கநல்லூர் ஏரி I"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 39,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-sholinganallur-lake-ii",
+      "name": "Sholinganallur Lake II",
+      "nameTranslations": {
+        "ta": "சோழிங்கநல்லூர் ஏரி II"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 40,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-semmancheri-depot",
+      "name": "Semmancheri Depot",
+      "nameTranslations": {
+        "ta": "செம்மஞ்சேரி பணிமனை"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 41,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-semmancheri-i",
+      "name": "Semmancheri I",
+      "nameTranslations": {
+        "ta": "செம்மஞ்சேரி I"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 42,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-semmancheri-ii",
+      "name": "Semmancheri II",
+      "nameTranslations": {
+        "ta": "செம்மஞ்சேரி II"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 43,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-gandhi-nagar",
+      "name": "Gandhi Nagar",
+      "nameTranslations": {
+        "ta": "காந்தி நகர்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 44,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-navallur",
+      "name": "Navallur",
+      "nameTranslations": {
+        "ta": "நாவலூர்"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 45,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-siruseri",
+      "name": "Siruseri",
+      "nameTranslations": {
+        "ta": "சிறுசேரி"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 46,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-sipcot-1",
+      "name": "SIPCOT 1",
+      "nameTranslations": {
+        "ta": "சிப்காட் 1"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 47,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
+    },
+    {
+      "id": "in-maa-cmrl-sipcot-2",
+      "name": "SIPCOT 2",
+      "nameTranslations": {
+        "ta": "சிப்காட் 2"
+      },
+      "operatorId": "in-maa-cmrl",
+      "status": "under-construction",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Purple_Line_(Chennai_Metro)",
+      "lineIds": [
+        "cmrl-purple"
+      ],
+      "order": 48,
+      "layout": "elevated",
+      "connections": [],
+      "metadataConfidence": "contributed-unverified"
     }
   ],
-  "generatedAt": "2026-07-16T07:15:42.353663+00:00"
+  "generatedAt": "2026-07-16T14:26:46.193242+00:00"
 }

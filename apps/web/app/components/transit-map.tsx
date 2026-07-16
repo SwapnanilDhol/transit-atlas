@@ -312,7 +312,6 @@ export function TransitMap({
     }
 
     const selectedFeatures = network.features.filter((feature) => {
-      if (feature.geometry.type !== "Point") return false;
       const featureLines = feature.properties?.lines;
       return Array.isArray(featureLines) && featureLines.includes(selectedLine);
     });
@@ -344,10 +343,11 @@ export function TransitMap({
     );
     map.setPaintProperty("transit-stations", "circle-opacity", 0.28);
 
-    const coordinates = selectedFeatures
-      .map((feature) => feature.geometry)
-      .filter((geometry): geometry is GeoJSON.Point => geometry.type === "Point")
-      .map((geometry) => geometry.coordinates);
+    const coordinates = selectedFeatures.flatMap((feature) => {
+      if (feature.geometry.type === "Point") return [feature.geometry.coordinates];
+      if (feature.geometry.type === "LineString") return feature.geometry.coordinates;
+      return [];
+    });
 
     if (coordinates.length > 0) {
       const longitudes = coordinates.map(([longitude]) => longitude);

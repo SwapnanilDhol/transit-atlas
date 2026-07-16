@@ -23,6 +23,12 @@ type Station = {
   id: string;
   name: string;
   lineIds: string[];
+  nameTranslations?: Record<string, string>;
+  layout?: "underground" | "elevated";
+  connections?: string[];
+  latitude?: number;
+  longitude?: number;
+  metadataConfidence?: string;
 };
 
 type NetworkData = {
@@ -127,13 +133,14 @@ const chennaiLines: Line[] = [
   },
   {
     id: "purple",
+    sourceId: "cmrl-purple",
     label: "Purple line",
     corridor: "Corridor 3",
-    detail: "Madhavaram · SIPCOT",
+    detail: "Madhavaram Milk Colony · Siruseri SIPCOT II",
     color: "#8f68ff",
     status: "Building",
     stations: 50,
-    description: "A future north–south spine connecting Madhavaram, Mylapore, OMR and SIPCOT.",
+    description: "An under-construction north–south spine connecting Madhavaram, Mylapore, OMR and Siruseri SIPCOT.",
   },
   {
     id: "yellow",
@@ -478,6 +485,9 @@ function PanelContent({
   const selectedStations = sourceLineId
     ? network?.stations.filter((station) => station.lineIds.includes(sourceLineId)) ?? []
     : [];
+  const mappedStationCount = selectedStations.filter(
+    (station) => station.latitude != null && station.longitude != null,
+  ).length;
 
   return (
     <>
@@ -575,7 +585,11 @@ function PanelContent({
 
               <div className="mb-2 flex items-center justify-between border-t border-black/8 px-2 pt-4">
                 <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-black/40">Stations</span>
-                <span className="text-[10px] text-black/35">{selectedStations.length ? `${selectedStations.length} mapped` : "Awaiting geometry"}</span>
+                <span className="text-[10px] text-black/35">
+                  {selectedStations.length
+                    ? `${mappedStationCount} mapped · ${selectedStations.length} listed`
+                    : "Awaiting geometry"}
+                </span>
               </div>
               {selectedStations.length > 0 ? (
                 <div className="pb-3">
@@ -586,7 +600,27 @@ function PanelContent({
                         {index < selectedStations.length - 1 && <span className="absolute left-[11px] top-1/2 h-5 w-0.5" style={{ background: selected.color }} />}
                         <span className="relative size-2.5 rounded-full border-2 border-[#f8f5ee]" style={{ background: selected.color, boxShadow: `0 0 0 1px ${selected.color}` }} />
                       </span>
-                      <span className="truncate text-xs font-medium text-[#34443f]">{station.name}</span>
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate text-xs font-medium text-[#34443f]">{station.name}</span>
+                        {(station.nameTranslations?.ta || station.layout) && (
+                          <span className="mt-0.5 flex items-center gap-1.5 text-[9px] text-black/38">
+                            {station.nameTranslations?.ta && <span className="truncate">{station.nameTranslations.ta}</span>}
+                            {station.layout && (
+                              <span className="shrink-0 rounded bg-black/[0.045] px-1.5 py-0.5 capitalize">
+                                {station.layout}
+                              </span>
+                            )}
+                          </span>
+                        )}
+                        {station.connections && station.connections.length > 0 && (
+                          <span className="mt-1 block truncate text-[9px] text-[#587014]">
+                            Connects: {station.connections.join(" · ")}
+                          </span>
+                        )}
+                      </span>
+                      {station.latitude != null && station.longitude != null && (
+                        <span className="shrink-0 font-mono text-[8px] uppercase tracking-[0.08em] text-[#66801e]">Mapped</span>
+                      )}
                     </div>
                   ))}
                 </div>
