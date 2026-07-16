@@ -10,17 +10,26 @@ const destinationRoot = resolve(
 );
 
 const files = [
-  "network.geojson",
-  "network.json",
-  "projects.json",
-  "data-quality.json",
-  "source-registry.json",
-  "import-report.json",
+  "manifest.json",
+  "region.json",
+  "modes/metro/network.geojson",
+  "modes/metro/network.json",
+  "modes/metro/stations.geojson",
+  "modes/metro/service-patterns.json",
+  "modes/bus/network.json",
+  "modes/bus/stops.geojson",
+  "modes/bus/stop-matches.json",
+  "projects/projects.json",
+  "metadata/metro-quality.json",
+  "metadata/bus-quality.json",
+  "metadata/sources.json",
+  "metadata/import-report.json",
 ];
 
 await mkdir(destinationRoot, { recursive: true });
 
 for (const file of files) {
+  await mkdir(dirname(resolve(destinationRoot, file)), { recursive: true });
   await cp(resolve(sourceRoot, file), resolve(destinationRoot, file));
 }
 

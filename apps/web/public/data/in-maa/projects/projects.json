@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "0.1.0",
+  "projects": [
+    {
+      "id": "in-maa-cmrl-phase-2",
+      "name": "Chennai Metro Phase II",
+      "status": "under-construction",
+      "totalLengthKm": 118.9,
+      "stationCount": 128,
+      "targetCompletion": "2028-12-31",
+      "targetCompletionPrecision": "year",
+      "corridors": [
+        {
+          "id": "cmrl-c3",
+          "name": "Madhavaram to SIPCOT",
+          "lengthKm": 45.8,
+          "elevatedKm": 19.1,
+          "undergroundKm": 26.7,
+          "stationCount": 50
+        },
+        {
+          "id": "cmrl-c4",
+          "name": "Lighthouse to Poonamallee Bypass",
+          "lengthKm": 26.1,
+          "elevatedKm": 16.0,
+          "undergroundKm": 10.1,
+          "stationCount": 30
+        },
+        {
+          "id": "cmrl-c5",
+          "name": "Madhavaram to Sholinganallur",
+          "lengthKm": 47.0,
+          "elevatedKm": 41.2,
+          "undergroundKm": 5.8,
+          "stationCount": 48
+        }
+      ],
+      "sourceUrl": "https://chennaimetrorail.org/project-status/",
+      "geometry": null,
+      "geometryNote": "No alignment geometry is published here; the official schematic map is not georeferenced and was not traced."
+    }
+  ],
+  "generatedAt": "2026-07-16T07:15:42.353663+00:00"
+}

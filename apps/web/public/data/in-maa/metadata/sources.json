@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "0.1.0",
+  "regionId": "in-maa",
+  "sources": [
+    {
+      "id": "mtc-route-directory",
+      "publisher": "Metropolitan Transport Corporation (Chennai) Ltd",
+      "title": "MTC route information",
+      "url": "https://mtcbus.tn.gov.in/Home/routewiseinfo",
+      "format": "HTML route directory",
+      "authority": "official",
+      "sourceUpdatedAt": "2026-07-08",
+      "license": {
+        "status": "unknown",
+        "warning": "MTC does not publish an explicit open-data license on the route directory. Store derived route facts with attribution; do not redistribute page assets."
+      },
+      "capabilities": ["static-network"],
+      "limitations": [
+        "Ordered stage names only: no coordinates, route shapes, trip calendars, or departure times.",
+        "Stage spelling variants are normalized conservatively and may still represent duplicate physical stops."
+      ]
+    },
+    {
+      "id": "cumta-static-gtfs-mtc",
+      "publisher": "Chennai Unified Metropolitan Transport Authority",
+      "title": "MTC static GTFS",
+      "landingPageUrl": "https://opendata.cumta.org/",
+      "format": "GTFS Schedule ZIP",
+      "authority": "official",
+      "license": {
+        "status": "unknown",
+        "warning": "The portal advertises downloadable data, but a machine-readable license or terms file has not yet been captured. Do not assume redistribution rights."
+      },
+      "retrievalStatus": "temporarily-unavailable",
+      "retrievalNote": "On 2026-07-16 the official host returned DNS NXDOMAIN. Replace the MTC HTML fallback with this feed when a verified official download becomes reachable."
+    },
+    {
+      "id": "cumta-static-gtfs-cmrl",
+      "publisher": "Chennai Unified Metropolitan Transport Authority",
+      "title": "CMRL static GTFS",
+      "landingPageUrl": "https://opendata.cumta.org/",
+      "format": "GTFS Schedule ZIP",
+      "authority": "official",
+      "license": {
+        "status": "unknown",
+        "warning": "The portal advertises downloadable data, but a machine-readable license or terms file has not yet been captured. Do not assume redistribution rights."
+      },
+      "retrievalStatus": "temporarily-unavailable",
+      "retrievalNote": "On 2026-07-16 the official host returned DNS NXDOMAIN. The importer performs runtime link discovery and supports an explicitly verified official URL."
+    },
+    {
+      "id": "cmrl-station-information",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "CMRL station information",
+      "url": "https://chennaimetrorail.org/",
+      "format": "HTML",
+      "authority": "official",
+      "license": {
+        "status": "unknown",
+        "warning": "No explicit open-data license was found. Store derived facts with attribution; do not redistribute page assets."
+      }
+    },
+    {
+      "id": "openstreetmap-cmrl-routes",
+      "publisher": "OpenStreetMap contributors",
+      "title": "Chennai Metro operational route relations",
+      "url": "https://wiki.openstreetmap.org/wiki/Chennai_Metro",
+      "format": "OSM XML",
+      "authority": "community-maintained geospatial data",
+      "relationIds": {
+        "blueRouteMaster": 8037596,
+        "greenRouteMaster": 7845614
+      },
+      "license": {
+        "status": "open",
+        "name": "Open Database License (ODbL) 1.0",
+        "url": "https://www.openstreetmap.org/copyright"
+      },
+      "useConstraint": "Attribute OpenStreetMap contributors and preserve ODbL requirements for derived databases."
+    },
+    {
+      "id": "cmrl-project-status",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "Project Status",
+      "url": "https://chennaimetrorail.org/project-status/",
+      "format": "HTML",
+      "authority": "official",
+      "license": {"status": "unknown"}
+    },
+    {
+      "id": "cmrl-operating-timetable",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "Chennai Metro timetable - weekdays, Saturdays, Sundays and holidays",
+      "url": "https://chennaimetrorail.org/wp-content/uploads/2024/03/chennai-metro-timetable.pdf",
+      "format": "PDF timetable",
+      "authority": "official",
+      "license": {"status": "unknown"},
+      "useConstraint": "Headway-based estimates only; this is not a vehicle-position or delay feed."
+    },
+    {
+      "id": "cmrl-blue-frequency-update-2026-01-07",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "CMRL increases train frequency on Blue Line",
+      "url": "https://chennaimetrorail.org/wp-content/uploads/2026/01/Press-Release-07.01.2026-English-1.pdf",
+      "format": "PDF press release",
+      "authority": "official",
+      "effectiveDate": "2026-01-07",
+      "license": {"status": "unknown"}
+    },
+    {
+      "id": "cmrl-phase-2-map",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "Chennai Metro Rail Phase II Map",
+      "url": "https://chennaimetrorail.org/wp-content/uploads/2025/03/Phase-II-Map-Updated-Map-PHASE-2.pdf",
+      "format": "PDF schematic",
+      "authority": "official",
+      "license": {"status": "unknown"},
+      "useConstraint": "Reference only. Do not treat schematic linework as geospatial alignment geometry."
+    },
+    {
+      "id": "cmrl-phase-2-dpr",
+      "publisher": "Chennai Metro Rail Limited",
+      "title": "Updated Detailed Project Report for Chennai Metro Rail Phase II",
+      "url": "https://chennaimetrorail.org/wp-content/uploads/2025/07/Project-DPR-for-Chennai-Metro-Rail-Phase-II.pdf",
+      "format": "PDF",
+      "authority": "official",
+      "license": {"status": "unknown"}
+    }
+  ]
+}

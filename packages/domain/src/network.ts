@@ -18,13 +18,30 @@ export const modeSchema = z.enum([
 export type Mode = z.infer<typeof modeSchema>;
 
 export const regionSchema = z.object({
+  schemaVersion: z.string().optional(),
   id: entityIdSchema,
+  slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
   name: localizedTextSchema,
   kind: z.enum(["world", "country", "territory", "state", "province", "metro-area", "city", "district"]),
   parentId: entityIdSchema.optional(),
   countryCode: z.string().length(2).toUpperCase().optional(),
   timezone: z.string().min(1),
   languages: z.array(languageTagSchema).min(1),
+  defaultLocale: languageTagSchema.optional(),
+  supportedModes: z.array(modeSchema).default([]),
+  viewport: z.object({
+    center: z.object({
+      latitude: z.number().min(-90).max(90),
+      longitude: z.number().min(-180).max(180),
+    }),
+    zoom: z.number().min(0).max(24),
+    boundingBox: z.object({
+      south: z.number().min(-90).max(90),
+      west: z.number().min(-180).max(180),
+      north: z.number().min(-90).max(90),
+      east: z.number().min(-180).max(180),
+    }),
+  }).optional(),
   currency: z.string().regex(/^[A-Z]{3}$/).optional(),
   geometry: geometrySchema.optional(),
   metadata: entityMetadataSchema.optional(),

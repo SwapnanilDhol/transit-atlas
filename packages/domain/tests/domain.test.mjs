@@ -4,6 +4,7 @@ import {
   infrastructureProjectSchema,
   placeSchema,
   regionSchema,
+  regionalManifestSchema,
   serviceTimeSchema,
   textFor,
 } from "../dist/index.js";
@@ -19,6 +20,31 @@ test("accepts a multilingual region", () => {
   });
   assert.equal(region.countryCode, "IN");
   assert.equal(textFor(region.name, ["ta-IN"]), "சென்னை");
+});
+
+test("accepts a manifest-driven regional bundle", () => {
+  const manifest = regionalManifestSchema.parse({
+    schemaVersion: "1.0.0",
+    bundleVersion: "2026-07-16.1",
+    regionId: "in-maa",
+    updatedAt: "2026-07-16T07:34:16Z",
+    capabilities: {
+      catalog: true,
+      map: true,
+      schedule: true,
+      journeyPlanning: false,
+      realtime: false,
+      futureProjects: true,
+    },
+    datasets: [{
+      id: "metro-network",
+      mode: "metro",
+      kind: "network",
+      path: "modes/metro/network.json",
+      format: "json",
+    }],
+  });
+  assert.equal(manifest.regionId, "in-maa");
 });
 
 test("distinguishes a platform from its parent station", () => {

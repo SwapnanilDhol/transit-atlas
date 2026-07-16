@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "0.1.0",
+  "regionId": "in-maa",
+  "timezone": "Asia/Kolkata",
+  "generatedAt": "2026-07-16T07:15:00Z",
+  "disclaimer": "Published service windows and headways transcribed from CMRL timetable material. These are not live arrivals or an exact departure-by-departure schedule.",
+  "patterns": [
+    {
+      "id": "cmrl-blue-weekday",
+      "lineId": "cmrl-blue",
+      "dayType": "weekday",
+      "directions": [
+        {"directionId": "to-airport", "originPlaceId": "in-maa-cmrl-wimco-nagar-depot-metro", "destinationPlaceId": "in-maa-cmrl-chennai-international-airport", "firstDepartureTime": "04:56", "lastDepartureTime": "23:00"},
+        {"directionId": "to-wimco", "originPlaceId": "in-maa-cmrl-chennai-international-airport", "destinationPlaceId": "in-maa-cmrl-wimco-nagar-depot-metro", "firstDepartureTime": "04:51", "lastDepartureTime": "23:00"}
+      ],
+      "headwayBands": [
+        {"startTime": "05:00", "endTime": "08:00", "headwaySeconds": 420},
+        {"startTime": "08:00", "endTime": "11:00", "headwaySeconds": 360, "note": "Alandur-Washermenpet receives an additional overlay for 3-minute combined frequency."},
+        {"startTime": "11:00", "endTime": "17:00", "headwaySeconds": 420},
+        {"startTime": "17:00", "endTime": "20:00", "headwaySeconds": 360, "note": "Alandur-Washermenpet receives an additional overlay for 3-minute combined frequency."},
+        {"startTime": "20:00", "endTime": "22:00", "headwaySeconds": 420},
+        {"startTime": "22:00", "endTime": "23:00", "headwaySeconds": 900}
+      ],
+      "sourceIds": ["cmrl-operating-timetable", "cmrl-blue-frequency-update-2026-01-07"]
+    },
+    {
+      "id": "cmrl-blue-saturday",
+      "lineId": "cmrl-blue",
+      "dayType": "saturday",
+      "directions": [
+        {"directionId": "to-airport", "originPlaceId": "in-maa-cmrl-wimco-nagar-depot-metro", "destinationPlaceId": "in-maa-cmrl-chennai-international-airport", "firstDepartureTime": "04:56", "lastDepartureTime": "23:00"},
+        {"directionId": "to-wimco", "originPlaceId": "in-maa-cmrl-chennai-international-airport", "destinationPlaceId": "in-maa-cmrl-wimco-nagar-depot-metro", "firstDepartureTime": "04:51", "lastDepartureTime": "23:00"}
+      ],
+      "headwayBands": [
+        {"startTime": "05:00", "endTime": "08:00", "headwaySeconds": 420},
+        {"startTime": "08:00", "endTime": "11:00", "headwaySeconds": 360},
+        {"startTime": "11:00", "endTime": "17:00", "headwaySeconds": 420},
+        {"startTime": "17:00", "endTime": "20:00", "headwaySeconds": 360},
+        {"startTime": "20:00", "endTime": "22:00", "headwaySeconds": 420},
+        {"startTime": "22:00", "endTime": "23:00", "headwaySeconds": 900}
+      ],
+      "sourceIds": ["cmrl-operating-timetable"]
+    },
+    {
+      "id": "cmrl-blue-sunday-holiday",
+      "lineId": "cmrl-blue",
+      "dayType": "sunday-holiday",
+      "directions": [
+        {"directionId": "to-airport", "originPlaceId": "in-maa-cmrl-wimco-nagar-depot-metro", "destinationPlaceId": "in-maa-cmrl-chennai-international-airport", "firstDepartureTime": "05:03", "lastDepartureTime": "23:00"},
+        {"directionId": "to-wimco", "originPlaceId": "in-maa-cmrl-chennai-international-airport", "destinationPlaceId": "in-maa-cmrl-wimco-nagar-depot-metro", "firstDepartureTime": "05:02", "lastDepartureTime": "23:00"}
+      ],
+      "headwayBands": [
+        {"startTime": "05:00", "endTime": "12:00", "headwaySeconds": 600},
+        {"startTime": "12:00", "endTime": "20:00", "headwaySeconds": 420},
+        {"startTime": "20:00", "endTime": "22:00", "headwaySeconds": 600},
+        {"startTime": "22:00", "endTime": "23:00", "headwaySeconds": 900}
+      ],
+      "sourceIds": ["cmrl-operating-timetable"]
+    },
+    {
+      "id": "cmrl-green-weekday",
+      "lineId": "cmrl-green",
+      "dayType": "weekday",
+      "directions": [
+        {"directionId": "to-mount", "originPlaceId": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro", "destinationPlaceId": "in-maa-cmrl-st-thomas-mount-metro", "firstDepartureTime": "05:02", "lastDepartureTime": "23:00"},
+        {"directionId": "to-central", "originPlaceId": "in-maa-cmrl-st-thomas-mount-metro", "destinationPlaceId": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro", "firstDepartureTime": "05:01", "lastDepartureTime": "23:00"}
+      ],
+      "headwayBands": [
+        {"startTime": "05:00", "endTime": "08:00", "headwaySeconds": 840},
+        {"startTime": "08:00", "endTime": "11:00", "headwaySeconds": 720},
+        {"startTime": "11:00", "endTime": "17:00", "headwaySeconds": 840},
+        {"startTime": "17:00", "endTime": "20:00", "headwaySeconds": 720},
+        {"startTime": "20:00", "endTime": "22:00", "headwaySeconds": 840},
+        {"startTime": "22:00", "endTime": "23:00", "headwaySeconds": 1800}
+      ],
+      "sourceIds": ["cmrl-operating-timetable"]
+    },
+    {
+      "id": "cmrl-green-saturday",
+      "lineId": "cmrl-green",
+      "dayType": "saturday",
+      "directions": [
+        {"directionId": "to-mount", "originPlaceId": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro", "destinationPlaceId": "in-maa-cmrl-st-thomas-mount-metro", "firstDepartureTime": "05:02", "lastDepartureTime": "23:00"},
+        {"directionId": "to-central", "originPlaceId": "in-maa-cmrl-st-thomas-mount-metro", "destinationPlaceId": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro", "firstDepartureTime": "05:01", "lastDepartureTime": "23:00"}
+      ],
+      "headwayBands": [
+        {"startTime": "05:00", "endTime": "08:00", "headwaySeconds": 840},
+        {"startTime": "08:00", "endTime": "11:00", "headwaySeconds": 720},
+        {"startTime": "11:00", "endTime": "17:00", "headwaySeconds": 840},
+        {"startTime": "17:00", "endTime": "20:00", "headwaySeconds": 720},
+        {"startTime": "20:00", "endTime": "22:00", "headwaySeconds": 840},
+        {"startTime": "22:00", "endTime": "23:00", "headwaySeconds": 1800}
+      ],
+      "sourceIds": ["cmrl-operating-timetable"]
+    },
+    {
+      "id": "cmrl-green-sunday-holiday",
+      "lineId": "cmrl-green",
+      "dayType": "sunday-holiday",
+      "directions": [
+        {"directionId": "to-mount", "originPlaceId": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro", "destinationPlaceId": "in-maa-cmrl-st-thomas-mount-metro", "firstDepartureTime": "04:51", "lastDepartureTime": "23:17"},
+        {"directionId": "to-central", "originPlaceId": "in-maa-cmrl-st-thomas-mount-metro", "destinationPlaceId": "in-maa-cmrl-puratchi-thalaivar-dr-m-g-ramachandran-central-metro", "firstDepartureTime": "04:51", "lastDepartureTime": "23:07"}
+      ],
+      "headwayBands": [
+        {"startTime": "05:00", "endTime": "12:00", "headwaySeconds": 1200},
+        {"startTime": "12:00", "endTime": "20:00", "headwaySeconds": 840},
+        {"startTime": "20:00", "endTime": "22:00", "headwaySeconds": 1200},
+        {"startTime": "22:00", "endTime": "23:30", "headwaySeconds": 1800}
+      ],
+      "sourceIds": ["cmrl-operating-timetable"]
+    }
+  ]
+}

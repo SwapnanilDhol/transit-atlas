@@ -1,0 +1,348 @@
+{
+  "generatedAt": "2026-07-16T07:15:42.353663+00:00",
+  "artifacts": [
+    {
+      "path": "cmrl/home.html",
+      "sourceUrl": "https://chennaimetrorail.org/",
+      "retrievedAt": "2026-07-15T19:59:12.642602+00:00",
+      "bytes": 125495,
+      "sha256": "90d92cc8b850bce059ff94b2544890054c9eeeadb62a817c3fe9d3486e56b135"
+    },
+    {
+      "path": "cmrl/project-status.html",
+      "sourceUrl": "https://chennaimetrorail.org/project-status/",
+      "retrievedAt": "2026-07-15T19:59:13.783388+00:00",
+      "bytes": 96151,
+      "sha256": "04a86c164e21a9130387a9a61cc8474a4eaeff66251caa505ea88cc5ead7b68f"
+    },
+    {
+      "path": "cmrl/stations/ag-dms.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ag-dms/",
+      "retrievedAt": "2026-07-15T19:59:18.419555+00:00",
+      "bytes": 113886,
+      "sha256": "76ad4ebf9fa0090b48acc7daddf89a9bd0be1fad6b51e21d92f97fb51093e7fe"
+    },
+    {
+      "path": "cmrl/stations/anna-nagar-east.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/anna-nagar-east/",
+      "retrievedAt": "2026-07-15T19:59:21.542013+00:00",
+      "bytes": 115738,
+      "sha256": "5c63e596cb0c0fda0879f2be821231628e3bf5894213f5547113ceeaa734df10"
+    },
+    {
+      "path": "cmrl/stations/anna-nagar-tower.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/anna-nagar-tower/",
+      "retrievedAt": "2026-07-15T19:59:21.542018+00:00",
+      "bytes": 112695,
+      "sha256": "128328168d99adceedd5b36b60c71dbb18b34549d41878e39c6bb40d91ace3e1"
+    },
+    {
+      "path": "cmrl/stations/arignar-anna-alandur-metro-2.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/arignar-anna-alandur-metro-2/",
+      "retrievedAt": "2026-07-15T19:59:23.023995+00:00",
+      "bytes": 114419,
+      "sha256": "1423f9956d1eb800cb6f1b43f069eff3904c3c84649453adb5459e6ccb718612"
+    },
+    {
+      "path": "cmrl/stations/arignar-anna-alandur-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/arignar-anna-alandur-metro/",
+      "retrievedAt": "2026-07-15T19:59:19.946962+00:00",
+      "bytes": 114430,
+      "sha256": "2ecc0575dc4c9e853223460f5919a4fe52c1d33d9eab84dedf5c92e6515b5179"
+    },
+    {
+      "path": "cmrl/stations/arumbakkam.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/arumbakkam/",
+      "retrievedAt": "2026-07-15T19:59:23.022169+00:00",
+      "bytes": 109791,
+      "sha256": "961bef3583985eddb6469e528ebe538187bc7b3415e5ba5e6fbc7a4073972731"
+    },
+    {
+      "path": "cmrl/stations/ashok-nagar.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ashok-nagar/",
+      "retrievedAt": "2026-07-15T19:59:23.026086+00:00",
+      "bytes": 111990,
+      "sha256": "dc1b9543094b50b61b76959c5a813ea3e2c2a1aa5dcdd9293d0debced809556d"
+    },
+    {
+      "path": "cmrl/stations/chennai-international-airport.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/chennai-international-airport/",
+      "retrievedAt": "2026-07-15T19:59:19.971879+00:00",
+      "bytes": 108452,
+      "sha256": "4d8e488435bb6ac8fd7fc69c97b564cd5ac2487245e238623bf99d8e973d2bdb"
+    },
+    {
+      "path": "cmrl/stations/egmore-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/egmore-metro/",
+      "retrievedAt": "2026-07-15T19:59:19.985979+00:00",
+      "bytes": 113557,
+      "sha256": "80466f4a699d6c27c38457a14d137cdcb7972f258edac95c4cbcedae0e61815f"
+    },
+    {
+      "path": "cmrl/stations/ekkattuthangal.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ekkattuthangal/",
+      "retrievedAt": "2026-07-15T19:59:22.948026+00:00",
+      "bytes": 107680,
+      "sha256": "019d929a962b557b3365c627205794345156d6ccaa305fa6f2a8c037ee0b05e9"
+    },
+    {
+      "path": "cmrl/stations/government-estate.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/government-estate/",
+      "retrievedAt": "2026-07-15T19:59:16.843940+00:00",
+      "bytes": 112848,
+      "sha256": "1c39d92d47642fd8dbd4024c4acec7d12985477c34d69a0adbcd72c9f779d937"
+    },
+    {
+      "path": "cmrl/stations/guindy.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/guindy/",
+      "retrievedAt": "2026-07-15T19:59:18.537760+00:00",
+      "bytes": 106788,
+      "sha256": "3b1e606c3179ee32548ea37134e66f815072414de622c17e87d924e35aab2b0f"
+    },
+    {
+      "path": "cmrl/stations/highcourt.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/highcourt/",
+      "retrievedAt": "2026-07-15T19:59:16.931960+00:00",
+      "bytes": 113212,
+      "sha256": "3fb93c6a3b4c25f9b502fe623ed30345a5965774588913296f04736085d93106"
+    },
+    {
+      "path": "cmrl/stations/kaladipet-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/kaladipet-metro/",
+      "retrievedAt": "2026-07-15T19:59:15.266552+00:00",
+      "bytes": 109694,
+      "sha256": "25c2c5c72160ba2e8ee20da4936712133d0499f0679089b87ac602471d1fb93c"
+    },
+    {
+      "path": "cmrl/stations/kilpauk.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/kilpauk/",
+      "retrievedAt": "2026-07-15T19:59:21.504492+00:00",
+      "bytes": 111374,
+      "sha256": "dbaf2250ec9992778f8f97ad59b867f7fc265bf07edde224e3948b49fafe10e0"
+    },
+    {
+      "path": "cmrl/stations/koyambedu.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/koyambedu/",
+      "retrievedAt": "2026-07-15T19:59:21.483577+00:00",
+      "bytes": 111668,
+      "sha256": "255ec5c8a9112748ef0d4a4f236ea676012ae29614d22ad47450a163665211fa"
+    },
+    {
+      "path": "cmrl/stations/lic.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/lic/",
+      "retrievedAt": "2026-07-15T19:59:16.979085+00:00",
+      "bytes": 113922,
+      "sha256": "4a72c1f894a5dfb5a4473bc2ccf54467643ba0e53924b33848d779ec9c69b696"
+    },
+    {
+      "path": "cmrl/stations/little-mount.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/little-mount/",
+      "retrievedAt": "2026-07-15T19:59:18.394482+00:00",
+      "bytes": 108079,
+      "sha256": "07aa9d15df7e18123e02946d26312faf1432e8d505f59f4c4cc4227267a81348"
+    },
+    {
+      "path": "cmrl/stations/mannadi.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/mannadi/",
+      "retrievedAt": "2026-07-15T19:59:16.848687+00:00",
+      "bytes": 109206,
+      "sha256": "34bbed8f92f06b77f85204d590a44cb91ea8147134227c104b548336daa135f0"
+    },
+    {
+      "path": "cmrl/stations/meenambakkam.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/meenambakkam/",
+      "retrievedAt": "2026-07-15T19:59:19.946831+00:00",
+      "bytes": 109673,
+      "sha256": "b7a50bd376e06833f47f127456b721f12911f166095c6a83c2ec0e1a0f48bd12"
+    },
+    {
+      "path": "cmrl/stations/nandanam.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/nandanam/",
+      "retrievedAt": "2026-07-15T19:59:18.502601+00:00",
+      "bytes": 115535,
+      "sha256": "9cf7a75c2ed8fe41c41a3df8fc1f2074c04888fcea8f8c4abd46a9c83e3b1e03"
+    },
+    {
+      "path": "cmrl/stations/nehru-park.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/nehru-park/",
+      "retrievedAt": "2026-07-15T19:59:19.979299+00:00",
+      "bytes": 112035,
+      "sha256": "17e894c1c0ece081d6ba30f94f653281b30f31dc72b98551f6aa690c1a365fc9"
+    },
+    {
+      "path": "cmrl/stations/new-washermenpet-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/new-washermenpet-metro/",
+      "retrievedAt": "2026-07-15T19:57:32.229350+00:00",
+      "bytes": 110341,
+      "sha256": "5c09c130a5facb35adca1e75be416f18005b45b83dc68accd3fefa64b7ee2c69"
+    },
+    {
+      "path": "cmrl/stations/ota-nanganallur-road.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/ota-nanganallur-road/",
+      "retrievedAt": "2026-07-15T19:59:19.915565+00:00",
+      "bytes": 106293,
+      "sha256": "d6a253f37a55775e22ca7acc8393520516e00a2b900fe5a5158af315c2eba098"
+    },
+    {
+      "path": "cmrl/stations/pachaiyappas-college.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/pachaiyappas-college/",
+      "retrievedAt": "2026-07-15T19:59:21.491854+00:00",
+      "bytes": 111034,
+      "sha256": "38959ae4fdb81fc2fd2f1dbdca8731aa4e6082cff2516f294fe97a73421a4687"
+    },
+    {
+      "path": "cmrl/stations/puratchi-thalaivar-dr-m-g-ramachandran-central-metro-2.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/puratchi-thalaivar-dr-m-g-ramachandran-central-metro-2/",
+      "retrievedAt": "2026-07-15T19:59:19.993999+00:00",
+      "bytes": 126967,
+      "sha256": "6478f382226308d97f9a00ce41db69a22fedb5c535420a64f5932849099dd8bb"
+    },
+    {
+      "path": "cmrl/stations/puratchi-thalaivar-dr-m-g-ramachandran-central-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/puratchi-thalaivar-dr-m-g-ramachandran-central-metro/",
+      "retrievedAt": "2026-07-15T19:59:16.931998+00:00",
+      "bytes": 126976,
+      "sha256": "71b49912c80ab4e4dada0d72fd1ec7164bd62112801b3b48b6583bc1db45ca28"
+    },
+    {
+      "path": "cmrl/stations/puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/puratchi-thalaivi-dr-j-jayalalithaa-cmbt-metro/",
+      "retrievedAt": "2026-07-15T19:59:22.941485+00:00",
+      "bytes": 109318,
+      "sha256": "9a65118b0a092d3190ebcc17b13db4173acfae2a1b454bdc4a2fbed0c8b4d877"
+    },
+    {
+      "path": "cmrl/stations/saidapet-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/saidapet-metro/",
+      "retrievedAt": "2026-07-15T19:59:18.414672+00:00",
+      "bytes": 113998,
+      "sha256": "a1d7f7b256d6b918316b93d3ee23e2cc7244a2a90d431ebcb97d0ed0fc271a94"
+    },
+    {
+      "path": "cmrl/stations/shenoy-nagar.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/shenoy-nagar/",
+      "retrievedAt": "2026-07-15T19:59:21.499227+00:00",
+      "bytes": 112456,
+      "sha256": "afe98ee4ea0242e2853b35a3b8eed91c5582788c11d4616e5b68ead22574b8c7"
+    },
+    {
+      "path": "cmrl/stations/sir-thiyagaraya-college-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/sir-thiyagaraya-college-metro/",
+      "retrievedAt": "2026-07-15T19:59:16.806457+00:00",
+      "bytes": 108286,
+      "sha256": "1489de2b931018f1c647f22f63eb208a2db7ff72396690c4385e2e1dbdb1d1b9"
+    },
+    {
+      "path": "cmrl/stations/st-thomas-mount-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/st-thomas-mount-metro/",
+      "retrievedAt": "2026-07-15T19:59:23.057568+00:00",
+      "bytes": 107507,
+      "sha256": "c3e1401dbaf4c9a1a5dd61d6de0f716f8a234bc606edfd3cd938d8e8920d5e5d"
+    },
+    {
+      "path": "cmrl/stations/teynampet.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/teynampet/",
+      "retrievedAt": "2026-07-15T19:59:18.419585+00:00",
+      "bytes": 113345,
+      "sha256": "6812173995c94e621651c873ff7c3c335601556e6fb831f065455be6b95320b7"
+    },
+    {
+      "path": "cmrl/stations/thirumangalam.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thirumangalam/",
+      "retrievedAt": "2026-07-15T19:59:21.504884+00:00",
+      "bytes": 113786,
+      "sha256": "6241fd9abe77aca64f9d5d8fefae3d1a33b066f974cbab74ded68a3853554d77"
+    },
+    {
+      "path": "cmrl/stations/thiruvotriyur-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thiruvotriyur-metro/",
+      "retrievedAt": "2026-07-15T19:59:15.261266+00:00",
+      "bytes": 108428,
+      "sha256": "7c12db1c55feb94041668c125d439b64658c0e818f4f38f089273a2ba68c117a"
+    },
+    {
+      "path": "cmrl/stations/thiruvottriyur-theradi-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thiruvottriyur-theradi-metro/",
+      "retrievedAt": "2026-07-15T19:59:15.240363+00:00",
+      "bytes": 107898,
+      "sha256": "7091b9ada519ff6a7315fdf089f1b4bb6136ebd0af23dacdd2382c8a49afa9d5"
+    },
+    {
+      "path": "cmrl/stations/thousand-lights.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/thousand-lights/",
+      "retrievedAt": "2026-07-15T19:59:18.429776+00:00",
+      "bytes": 112816,
+      "sha256": "27b3fe9e9b3dbb6fad9dd190289c19983ae981437b4976befaa48a4fc4f8ca89"
+    },
+    {
+      "path": "cmrl/stations/tollgate-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/tollgate-metro/",
+      "retrievedAt": "2026-07-15T19:59:15.356865+00:00",
+      "bytes": 109413,
+      "sha256": "5b3d7d3bb97ba633e39b18bee2971cde4ec1a3d8f7dff854ccf7813bedcc0300"
+    },
+    {
+      "path": "cmrl/stations/tondiarpet-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/tondiarpet-metro/",
+      "retrievedAt": "2026-07-15T19:59:15.484304+00:00",
+      "bytes": 110194,
+      "sha256": "6f585ccc53a8a061e23784ef97f3f13144f70f94daf74fc8134f0ea9c42b6f70"
+    },
+    {
+      "path": "cmrl/stations/vadapalani.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/vadapalani/",
+      "retrievedAt": "2026-07-15T19:59:35.117008+00:00",
+      "bytes": 109750,
+      "sha256": "b0eed325064653c8f380b6c7f4d0f64886464b10b5b2ce2bcf4196fa094ddfde"
+    },
+    {
+      "path": "cmrl/stations/washermenpet-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/washermenpet-metro/",
+      "retrievedAt": "2026-07-15T19:59:16.839074+00:00",
+      "bytes": 110221,
+      "sha256": "e989c0985dd93ebffec2291065de6bab61b80276982d4b5ff4b9507433f1b962"
+    },
+    {
+      "path": "cmrl/stations/wimco-nagar-depot-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/wimco-nagar-depot-metro/",
+      "retrievedAt": "2026-07-15T19:59:15.240582+00:00",
+      "bytes": 104302,
+      "sha256": "b231ac12dcdd8d8a73efff144830eb710bcf2c8f245adbe08517eac793cdc109"
+    },
+    {
+      "path": "cmrl/stations/wimco-nagar-metro.html",
+      "sourceUrl": "https://chennaimetrorail.org/station-information/wimco-nagar-metro/",
+      "retrievedAt": "2026-07-15T19:59:15.393550+00:00",
+      "bytes": 107448,
+      "sha256": "f2526f01837006e8f15cf068649589bf42ea823476db39630291b242bc9b9e0a"
+    },
+    {
+      "path": "cmrl/frequency-update-2026-01-07.pdf",
+      "sourceUrl": "https://chennaimetrorail.org/wp-content/uploads/2026/01/Press-Release-07.01.2026-English-1.pdf",
+      "retrievedAt": "2026-07-16T07:15:42.318293+00:00",
+      "bytes": 429071,
+      "sha256": "cebf88acfaa83f4273213b19bfd6e1fce234443b4efd66282539c395998de519"
+    },
+    {
+      "path": "cmrl/timetable.pdf",
+      "sourceUrl": "https://chennaimetrorail.org/wp-content/uploads/2024/03/chennai-metro-timetable.pdf",
+      "retrievedAt": "2026-07-16T07:15:42.316457+00:00",
+      "bytes": 154070,
+      "sha256": "527c1e7719b66a3601cae65f7322c49e86a49de294c3641c308fc021cea02a5c"
+    },
+    {
+      "path": "osm/blue-8037595.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/8037596",
+      "retrievedAt": "2026-07-16T07:04:55.016408+00:00",
+      "bytes": 113410,
+      "sha256": "f7838002b9c06bc11f9ec1344a998e4a1236eea109ee29da5533b66fba761622"
+    },
+    {
+      "path": "osm/green-8037605.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/7845614",
+      "retrievedAt": "2026-07-16T07:04:55.017924+00:00",
+      "bytes": 109430,
+      "sha256": "ac71d576047b066981884daf5b7538466b6db09abebf939f5b5eb0810e9c2aea"
+    }
+  ]
+}

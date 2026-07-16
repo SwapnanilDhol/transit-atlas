@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleVersion": "2026-07-16.1",
+  "regionId": "in-maa",
+  "updatedAt": "2026-07-16T07:34:16Z",
+  "capabilities": {
+    "catalog": true,
+    "map": true,
+    "schedule": true,
+    "journeyPlanning": false,
+    "realtime": false,
+    "futureProjects": true
+  },
+  "datasets": [
+    {
+      "id": "metro-network",
+      "mode": "metro",
+      "kind": "network",
+      "path": "modes/metro/network.json",
+      "format": "json"
+    },
+    {
+      "id": "metro-map",
+      "mode": "metro",
+      "kind": "geometry",
+      "path": "modes/metro/network.geojson",
+      "format": "geojson"
+    },
+    {
+      "id": "metro-stations",
+      "mode": "metro",
+      "kind": "places",
+      "path": "modes/metro/stations.geojson",
+      "format": "geojson"
+    },
+    {
+      "id": "metro-service-patterns",
+      "mode": "metro",
+      "kind": "schedule",
+      "path": "modes/metro/service-patterns.json",
+      "format": "json"
+    },
+    {
+      "id": "bus-network",
+      "mode": "bus",
+      "kind": "network",
+      "path": "modes/bus/network.json",
+      "format": "json"
+    },
+    {
+      "id": "bus-stops",
+      "mode": "bus",
+      "kind": "places",
+      "path": "modes/bus/stops.geojson",
+      "format": "geojson"
+    },
+    {
+      "id": "bus-stop-matches",
+      "mode": "bus",
+      "kind": "reconciliation",
+      "path": "modes/bus/stop-matches.json",
+      "format": "json"
+    },
+    {
+      "id": "future-projects",
+      "kind": "projects",
+      "path": "projects/projects.json",
+      "format": "json"
+    },
+    {
+      "id": "source-registry",
+      "kind": "provenance",
+      "path": "metadata/sources.json",
+      "format": "json"
+    },
+    {
+      "id": "metro-quality",
+      "mode": "metro",
+      "kind": "quality",
+      "path": "metadata/metro-quality.json",
+      "format": "json"
+    },
+    {
+      "id": "bus-quality",
+      "mode": "bus",
+      "kind": "quality",
+      "path": "metadata/bus-quality.json",
+      "format": "json"
+    },
+    {
+      "id": "import-report",
+      "kind": "provenance",
+      "path": "metadata/import-report.json",
+      "format": "json"
+    }
+  ]
+}

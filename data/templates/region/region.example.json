@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "xx-city",
+  "slug": "city-name",
+  "name": { "default": "City Name", "translations": {} },
+  "kind": "metro-area",
+  "countryCode": "XX",
+  "timezone": "Area/City",
+  "languages": ["en"],
+  "defaultLocale": "en",
+  "viewport": {
+    "center": { "latitude": 0, "longitude": 0 },
+    "zoom": 10,
+    "boundingBox": { "south": -1, "west": -1, "north": 1, "east": 1 }
+  },
+  "supportedModes": ["bus"]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleVersion": "YYYY-MM-DD.1",
+  "regionId": "xx-city",
+  "updatedAt": "YYYY-MM-DDTHH:mm:ssZ",
+  "capabilities": {
+    "catalog": true,
+    "map": false,
+    "schedule": false,
+    "journeyPlanning": false,
+    "realtime": false,
+    "futureProjects": false
+  },
+  "datasets": [
+    {
+      "id": "bus-network",
+      "mode": "bus",
+      "kind": "network",
+      "path": "modes/bus/network.json",
+      "format": "json"
+    },
+    {
+      "id": "source-registry",
+      "kind": "provenance",
+      "path": "metadata/sources.json",
+      "format": "json"
+    }
+  ]
+}

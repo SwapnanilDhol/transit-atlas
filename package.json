@@ -9,11 +9,15 @@
   "scripts": {
     "dev": "npm run dev --workspace @transit-atlas/web",
     "data:sync": "node tooling/sync-web-data.mjs",
+    "data:validate": "node tooling/validate-regions.mjs",
     "build": "npm run build --workspaces --if-present",
-    "check": "npm run check --workspaces --if-present",
+    "check": "npm run data:validate && npm run check --workspaces --if-present && npm run lint --workspace @transit-atlas/web",
     "test": "npm run test --workspaces --if-present"
   },
   "engines": {
     "node": ">=22.13.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.14"
   }
 }

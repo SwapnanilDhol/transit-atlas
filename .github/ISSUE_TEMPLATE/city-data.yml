@@ -1,0 +1,45 @@
+name: Add or improve a city
+description: Propose a new regional bundle or improve an existing one
+title: "[City data]: "
+labels: ["city-data"]
+body:
+  - type: input
+    id: city
+    attributes:
+      label: City or network
+      placeholder: Chennai, India
+    validations:
+      required: true
+  - type: textarea
+    id: agencies
+    attributes:
+      label: Agencies and modes
+      description: List the operators and transport modes in scope.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Data sources
+      description: Include official feed URLs, publishers, formats, licenses, and update frequency.
+    validations:
+      required: true
+  - type: dropdown
+    id: contribution
+    attributes:
+      label: Contribution intent
+      options:
+        - I plan to open a pull request
+        - I am requesting help from another contributor
+        - I am documenting available sources
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Data rights
+      options:
+        - label: I have not copied data from Google Maps, Apple Maps, or another proprietary map.
+          required: true
+        - label: I have identified the license or clearly marked it as unresolved.
+          required: true

@@ -39,3 +39,30 @@ export const regionCapabilitiesSchema = z.object({
   limitations: z.array(z.string()).default([]),
 });
 export type RegionCapabilities = z.infer<typeof regionCapabilitiesSchema>;
+
+export const regionalBundleCapabilitiesSchema = z.object({
+  catalog: z.boolean(),
+  map: z.boolean(),
+  schedule: z.boolean(),
+  journeyPlanning: z.boolean(),
+  realtime: z.boolean(),
+  futureProjects: z.boolean(),
+});
+
+export const regionalDatasetSchema = z.object({
+  id: entityIdSchema,
+  mode: z.string().min(1).optional(),
+  kind: z.enum(["network", "geometry", "places", "schedule", "projects", "quality", "provenance", "reconciliation"]),
+  path: z.string().min(1).refine((value) => !value.startsWith("/") && !value.split("/").includes(".."), "Dataset path must be region-relative"),
+  format: z.enum(["json", "geojson"]),
+});
+
+export const regionalManifestSchema = z.object({
+  schemaVersion: z.string().min(1),
+  bundleVersion: z.string().min(1),
+  regionId: entityIdSchema,
+  updatedAt: instantSchema,
+  capabilities: regionalBundleCapabilitiesSchema,
+  datasets: z.array(regionalDatasetSchema).min(1),
+});
+export type RegionalManifest = z.infer<typeof regionalManifestSchema>;

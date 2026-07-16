@@ -30,6 +30,18 @@ SOURCES = {
     "cmrl_project_status": "https://chennaimetrorail.org/project-status/",
     "cmrl_phase_2_map": "https://chennaimetrorail.org/wp-content/uploads/2025/03/Phase-II-Map-Updated-Map-PHASE-2.pdf",
     "cmrl_phase_2_dpr": "https://chennaimetrorail.org/wp-content/uploads/2025/07/Project-DPR-for-Chennai-Metro-Rail-Phase-II.pdf",
+    "cmrl_timetable": "https://chennaimetrorail.org/wp-content/uploads/2024/03/chennai-metro-timetable.pdf",
+    "cmrl_frequency_update_2026_01_07": "https://chennaimetrorail.org/wp-content/uploads/2026/01/Press-Release-07.01.2026-English-1.pdf",
+}
+OSM_ROUTES = {
+    "osm_blue_route": (
+        "https://api.openstreetmap.org/api/0.6/relation/8037595/full",
+        "osm/blue-8037595.osm",
+    ),
+    "osm_green_route": (
+        "https://api.openstreetmap.org/api/0.6/relation/8037605/full",
+        "osm/green-8037605.osm",
+    ),
 }
 CUMTA_PORTAL = "https://opendata.cumta.org/"
 
@@ -97,6 +109,13 @@ def main() -> int:
         if not args.skip_pdfs:
             save("cmrl_phase_2_map", SOURCES["cmrl_phase_2_map"], "cmrl/phase-2-map.pdf", manifest)
             save("cmrl_phase_2_dpr", SOURCES["cmrl_phase_2_dpr"], "cmrl/phase-2-dpr.pdf", manifest)
+            save("cmrl_timetable", SOURCES["cmrl_timetable"], "cmrl/timetable.pdf", manifest)
+            save(
+                "cmrl_frequency_update_2026_01_07",
+                SOURCES["cmrl_frequency_update_2026_01_07"],
+                "cmrl/frequency-update-2026-01-07.pdf",
+                manifest,
+            )
         if not args.skip_stations:
             urls = station_urls(home.decode("utf-8", errors="replace"))
 
@@ -114,6 +133,8 @@ def main() -> int:
             if failures:
                 print("Station page fetch failures:\n" + "\n".join(failures), file=sys.stderr)
                 return 1
+        for source_id, (url, relative_path) in OSM_ROUTES.items():
+            save(source_id, url, relative_path, manifest)
     except (OSError, urllib.error.URLError) as error:
         print(f"CMRL fetch failed: {error}", file=sys.stderr)
         return 1

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-07-16T07:37:08.377992+00:00",
+  "status": "passed-with-warnings",
+  "routeCount": 686,
+  "uniqueStopCount": 1538,
+  "routeStopMembershipCount": 9540,
+  "routesWithoutCoordinates": 84,
+  "stopsWithoutCoordinates": 1383,
+  "minimumStagesPerRoute": 2,
+  "maximumStagesPerRoute": 29,
+  "duplicateRouteIdCount": 0,
+  "parseErrors": [],
+  "warnings": [
+    "MTC route pages provide ordered stage names but no coordinates, shapes, trip calendars, or departure times.",
+    "OSM stop points are independently sourced; only conservative name matches are linked to MTC stages.",
+    "Unmatched points remain visible as OSM stops but are not associated with an MTC route.",
+    "CUMTA's preferred static GTFS portal was DNS-unreachable during this import; verified GTFS should supersede this reconciliation."
+  ],
+  "osmNamedStopPointCount": 1215,
+  "osmMatchedFeatureCount": 328,
+  "stopsWithCoordinates": 155,
+  "routesWithAtLeastOneMappedStop": 602
+}

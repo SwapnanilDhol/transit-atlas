@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "in-maa",
+  "slug": "chennai",
+  "name": {
+    "default": "Chennai",
+    "translations": {
+      "ta": "சென்னை"
+    }
+  },
+  "kind": "metro-area",
+  "countryCode": "IN",
+  "timezone": "Asia/Kolkata",
+  "languages": ["en", "ta"],
+  "defaultLocale": "en",
+  "viewport": {
+    "center": {
+      "latitude": 13.055,
+      "longitude": 80.235
+    },
+    "zoom": 10.45,
+    "boundingBox": {
+      "south": 12.75,
+      "west": 79.95,
+      "north": 13.35,
+      "east": 80.4
+    }
+  },
+  "supportedModes": ["metro", "bus"]
+}

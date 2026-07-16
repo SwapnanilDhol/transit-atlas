@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-07-16T07:37:08.377992+00:00",
+  "osmNamedStopCount": 1215,
+  "osmMatchedFeatureCount": 328,
+  "osmUnmatchedFeatureCount": 887,
+  "mtcStopCount": 1538,
+  "mtcMatchedStopCount": 155,
+  "mtcUnmatchedStopCount": 1383,
+  "matchMethodCounts": {
+    "exact-name": 259,
+    "high-confidence-fuzzy-name": 59,
+    "normalized-alias": 10
+  },
+  "minimumFuzzyConfidence": 0.93,
+  "notes": [
+    "All named OSM bus-stop points are plotted; only conservative matches are associated with MTC routes.",
+    "Multiple OSM platform nodes may correspond to one direction-agnostic MTC stage.",
+    "An official GTFS feed should supersede name reconciliation when available."
+  ]
+}

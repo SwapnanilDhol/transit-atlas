@@ -11,6 +11,9 @@ const MAP_STYLE = "https://tiles.openfreemap.org/styles/positron";
 
 type TransitMapProps = {
   activeLayers: string[];
+  selectedLine: string | null;
+  mode: "metro" | "bus";
+  selectedBusRoute: string | null;
   onReady?: () => void;
 };
 
@@ -22,10 +25,13 @@ const lineColors: Record<string, string> = {
   red: "#ff5c5c",
 };
 
-export function TransitMap({ activeLayers, onReady }: TransitMapProps) {
+export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute, onReady }: TransitMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
+  const networkRef = useRef<GeoJSON.FeatureCollection | null>(null);
+  const busStopsRef = useRef<GeoJSON.FeatureCollection | null>(null);
   const [hasNetwork, setHasNetwork] = useState(false);
+  const [hasBusStops, setHasBusStops] = useState(false);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
@@ -51,84 +57,175 @@ export function TransitMap({ activeLayers, onReady }: TransitMapProps) {
         "bottom-right",
       );
       map.addControl(
-        new maplibregl.AttributionControl({ compact: true }),
-        "bottom-right",
+        new maplibregl.AttributionControl({
+          compact: true,
+          customAttribution:
+            'Transit data © <a href="https://www.openstreetmap.org/copyright" target="_blank">OSM contributors</a>',
+        }),
+        "bottom-left",
       );
 
       map.on("load", async () => {
-      onReady?.();
+        onReady?.();
 
-      try {
-        const response = await fetch("/data/in-maa/network.geojson");
-        if (!response.ok) return;
-        const data = (await response.json()) as GeoJSON.FeatureCollection;
+        try {
+          const networkResponse = await fetch("/data/in-maa/modes/metro/network.geojson");
+          if (!networkResponse.ok) return;
+          const data = (await networkResponse.json()) as GeoJSON.FeatureCollection;
+          networkRef.current = data;
 
-        map.addSource("transit-network", {
-          type: "geojson",
-          data,
-        });
+          map.addSource("transit-network", {
+            type: "geojson",
+            data,
+          });
 
-        map.addLayer({
-          id: "transit-lines-halo",
-          type: "line",
-          source: "transit-network",
-          filter: ["==", ["geometry-type"], "LineString"],
-          paint: {
-            "line-color": "#07110f",
-            "line-width": ["interpolate", ["linear"], ["zoom"], 9, 5, 14, 10],
-            "line-opacity": 0.88,
-          },
-        });
+          map.addLayer({
+            id: "transit-lines-halo",
+            type: "line",
+            source: "transit-network",
+            filter: ["==", ["geometry-type"], "LineString"],
+            paint: {
+              "line-color": "#ffffff",
+              "line-width": ["interpolate", ["linear"], ["zoom"], 9, 4, 14, 8],
+              "line-opacity": 0.94,
+            },
+          });
 
-        map.addLayer({
-          id: "transit-lines",
-          type: "line",
-          source: "transit-network",
-          filter: ["==", ["geometry-type"], "LineString"],
-          paint: {
-            "line-color": [
-              "match",
-              ["get", "line"],
-              "blue",
-              lineColors.blue,
-              "green",
-              lineColors.green,
-              "purple",
-              lineColors.purple,
-              "yellow",
-              lineColors.yellow,
-              "red",
-              lineColors.red,
-              "#b4c0bd",
-            ],
-            "line-width": ["interpolate", ["linear"], ["zoom"], 9, 2.4, 14, 5],
-            "line-opacity": 0.96,
-            "line-dasharray": [
-              "case",
-              ["==", ["get", "status"], "operational"],
-              [1, 0],
-              [2, 1.5],
-            ],
-          },
-        });
+          map.addLayer({
+            id: "transit-lines",
+            type: "line",
+            source: "transit-network",
+            filter: ["==", ["geometry-type"], "LineString"],
+            paint: {
+              "line-color": [
+                "match",
+                ["get", "line"],
+                "blue",
+                lineColors.blue,
+                "green",
+                lineColors.green,
+                "purple",
+                lineColors.purple,
+                "yellow",
+                lineColors.yellow,
+                "red",
+                lineColors.red,
+                "#b4c0bd",
+              ],
+              "line-width": ["interpolate", ["linear"], ["zoom"], 9, 2.2, 14, 4.5],
+              "line-opacity": 0.96,
+              "line-dasharray": [
+                "case",
+                ["==", ["get", "status"], "operational"],
+                ["literal", [1, 0]],
+                ["literal", [2, 1.5]],
+              ],
+            },
+          });
 
-        map.addLayer({
-          id: "transit-stations",
-          type: "circle",
-          source: "transit-network",
-          filter: ["==", ["geometry-type"], "Point"],
-          paint: {
-            "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 2.5, 14, 5],
-            "circle-color": "#f5f1e9",
-            "circle-stroke-color": "#07110f",
-            "circle-stroke-width": 1.5,
-          },
-        });
+          map.addLayer({
+            id: "transit-selected-line-halo",
+            type: "line",
+            source: "transit-network",
+            filter: ["==", ["get", "line"], "__none__"],
+            paint: {
+              "line-color": "#ffffff",
+              "line-width": ["interpolate", ["linear"], ["zoom"], 9, 5.5, 14, 9],
+              "line-opacity": 0.96,
+            },
+          });
 
-        setHasNetwork(true);
-      } catch {
-        // The basemap remains useful while the first regional bundle is built.
-      }
+          map.addLayer({
+            id: "transit-selected-line",
+            type: "line",
+            source: "transit-network",
+            filter: ["==", ["get", "line"], "__none__"],
+            paint: {
+              "line-color": lineColors.blue,
+              "line-width": ["interpolate", ["linear"], ["zoom"], 9, 3, 14, 5.5],
+              "line-opacity": 1,
+            },
+          });
+
+          map.addLayer({
+            id: "transit-stations",
+            type: "circle",
+            source: "transit-network",
+            filter: ["==", ["geometry-type"], "Point"],
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 1.7, 14, 4],
+              "circle-color": [
+                "match",
+                ["get", "line"],
+                "blue",
+                lineColors.blue,
+                "green",
+                lineColors.green,
+                "#64736e",
+              ],
+              "circle-opacity": 0.9,
+              "circle-stroke-color": "#ffffff",
+              "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9, 0.8, 14, 1.5],
+            },
+          });
+
+          map.addLayer({
+            id: "transit-selected-stations",
+            type: "circle",
+            source: "transit-network",
+            filter: ["==", ["get", "id"], "__none__"],
+            paint: {
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 3.2, 14, 6],
+              "circle-color": "#ffffff",
+              "circle-stroke-color": lineColors.blue,
+              "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9, 1.5, 14, 2.5],
+            },
+          });
+
+          const busStopsResponse = await fetch("/data/in-maa/modes/bus/stops.geojson");
+          if (busStopsResponse.ok) {
+            const busStops = (await busStopsResponse.json()) as GeoJSON.FeatureCollection;
+            busStopsRef.current = busStops;
+            map.addSource("bus-stops", { type: "geojson", data: busStops });
+            map.addLayer({
+              id: "bus-stops",
+              type: "circle",
+              source: "bus-stops",
+              minzoom: 9.8,
+              layout: { visibility: "none" },
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 9.8, 2, 14, 4.5],
+                "circle-color": [
+                  "case",
+                  ["==", ["get", "matchMethod"], "unmatched"],
+                  "#d5a447",
+                  "#78972c",
+                ],
+                "circle-opacity": 0.76,
+                "circle-stroke-color": "#fffdf7",
+                "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9.8, 0.7, 14, 1.5],
+              },
+            });
+            map.addLayer({
+              id: "bus-selected-stops",
+              type: "circle",
+              source: "bus-stops",
+              filter: ["==", ["get", "id"], "__none__"],
+              layout: { visibility: "none" },
+              paint: {
+                "circle-radius": ["interpolate", ["linear"], ["zoom"], 9.8, 4, 14, 7],
+                "circle-color": "#d8ff64",
+                "circle-stroke-color": "#33450e",
+                "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9.8, 1.4, 14, 2.2],
+              },
+            });
+            setHasBusStops(true);
+          }
+
+          setHasNetwork(true);
+        } catch {
+          // The basemap remains useful while the first regional bundle is built.
+        }
       });
 
       mapRef.current = map;
@@ -177,5 +274,124 @@ export function TransitMap({ activeLayers, onReady }: TransitMapProps) {
     ]);
   }, [activeLayers, hasNetwork]);
 
-  return <div ref={containerRef} className="h-full w-full" aria-label="Map of Chennai Metro" />;
+  useEffect(() => {
+    const map = mapRef.current;
+    const network = networkRef.current;
+    if (!map || !hasNetwork || !network) return;
+
+    if (!selectedLine) {
+      map.setFilter("transit-selected-line-halo", ["==", ["get", "line"], "__none__"]);
+      map.setFilter("transit-selected-line", ["==", ["get", "line"], "__none__"]);
+      map.setFilter("transit-selected-stations", ["==", ["get", "id"], "__none__"]);
+      map.setPaintProperty("transit-lines-halo", "line-opacity", 0.94);
+      map.setPaintProperty("transit-lines", "line-opacity", 0.96);
+      map.setPaintProperty("transit-stations", "circle-opacity", 0.95);
+      return;
+    }
+
+    const selectedFeatures = network.features.filter((feature) => {
+      if (feature.geometry.type !== "Point") return false;
+      const featureLines = feature.properties?.lines;
+      return Array.isArray(featureLines) && featureLines.includes(selectedLine);
+    });
+
+    const selectedLineFilter: FilterSpecification = [
+      "==",
+      ["get", "line"],
+      selectedLine,
+    ];
+    map.setFilter("transit-selected-line-halo", selectedLineFilter);
+    map.setFilter("transit-selected-line", selectedLineFilter);
+    map.setPaintProperty(
+      "transit-selected-line",
+      "line-color",
+      lineColors[selectedLine] ?? "#d8ff64",
+    );
+    map.setPaintProperty("transit-lines-halo", "line-opacity", 0.08);
+    map.setPaintProperty("transit-lines", "line-opacity", 0.16);
+
+    map.setFilter("transit-selected-stations", [
+      "in",
+      selectedLine,
+      ["get", "lines"],
+    ] as FilterSpecification);
+    map.setPaintProperty(
+      "transit-selected-stations",
+      "circle-stroke-color",
+      lineColors[selectedLine] ?? "#d8ff64",
+    );
+    map.setPaintProperty("transit-stations", "circle-opacity", 0.28);
+
+    const coordinates = selectedFeatures
+      .map((feature) => feature.geometry)
+      .filter((geometry): geometry is GeoJSON.Point => geometry.type === "Point")
+      .map((geometry) => geometry.coordinates);
+
+    if (coordinates.length > 0) {
+      const longitudes = coordinates.map(([longitude]) => longitude);
+      const latitudes = coordinates.map(([, latitude]) => latitude);
+      map.fitBounds(
+        [
+          [Math.min(...longitudes), Math.min(...latitudes)],
+          [Math.max(...longitudes), Math.max(...latitudes)],
+        ],
+        { padding: 84, duration: 520, maxZoom: 12.5 },
+      );
+    }
+  }, [hasNetwork, selectedLine]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    const busStops = busStopsRef.current;
+    if (!map || !hasNetwork || !hasBusStops || !busStops) return;
+
+    const busVisibility = mode === "bus" ? "visible" : "none";
+    map.setLayoutProperty("bus-stops", "visibility", busVisibility);
+    map.setLayoutProperty("bus-selected-stops", "visibility", busVisibility);
+
+    if (mode === "bus") {
+      map.setPaintProperty("transit-lines-halo", "line-opacity", 0.16);
+      map.setPaintProperty("transit-lines", "line-opacity", 0.24);
+      map.setPaintProperty("transit-stations", "circle-opacity", 0.1);
+    } else if (!selectedLine) {
+      map.setPaintProperty("transit-lines-halo", "line-opacity", 0.94);
+      map.setPaintProperty("transit-lines", "line-opacity", 0.96);
+      map.setPaintProperty("transit-stations", "circle-opacity", 0.95);
+    }
+
+    if (mode !== "bus" || !selectedBusRoute) {
+      map.setFilter("bus-selected-stops", ["==", ["get", "id"], "__none__"]);
+      map.setPaintProperty("bus-stops", "circle-opacity", 0.76);
+      return;
+    }
+
+    map.setFilter("bus-selected-stops", [
+      "in",
+      selectedBusRoute,
+      ["get", "routeIds"],
+    ] as FilterSpecification);
+    map.setPaintProperty("bus-stops", "circle-opacity", 0.22);
+
+    const coordinates = busStops.features
+      .filter((feature) => {
+        const routeIds = feature.properties?.routeIds;
+        return feature.geometry.type === "Point" && Array.isArray(routeIds) && routeIds.includes(selectedBusRoute);
+      })
+      .map((feature) => feature.geometry)
+      .filter((geometry): geometry is GeoJSON.Point => geometry.type === "Point")
+      .map((geometry) => geometry.coordinates);
+    if (coordinates.length > 0) {
+      const longitudes = coordinates.map(([longitude]) => longitude);
+      const latitudes = coordinates.map(([, latitude]) => latitude);
+      map.fitBounds(
+        [
+          [Math.min(...longitudes), Math.min(...latitudes)],
+          [Math.max(...longitudes), Math.max(...latitudes)],
+        ],
+        { padding: 84, duration: 520, maxZoom: 13 },
+      );
+    }
+  }, [hasBusStops, hasNetwork, mode, selectedBusRoute, selectedLine]);
+
+  return <div ref={containerRef} className="h-full w-full" aria-label={`Map of Chennai ${mode === "bus" ? "bus stops" : "Metro"}`} />;
 }

@@ -7,7 +7,7 @@ authoritative.
 
 ## Current committed dataset
 
-The generated files in `data/regions/in-maa/` contain:
+The generated files in `data/regions/in-maa/modes/metro/` contain:
 
 - 41 unique operational CMRL stations;
 - 26 Blue Line station memberships and 17 Green Line memberships;
@@ -19,7 +19,7 @@ The generated files in `data/regions/in-maa/` contain:
 - provenance, retrieval timestamps, SHA-256 checksums, source status, and
   quality warnings.
 
-`network.geojson` is the client-facing map layer. It currently contains verified
+`modes/metro/network.geojson` is the client-facing map layer. It contains verified
 operational station `Point` features only. Its properties include `line`,
 `lines`, `lineIds`, and `status`. It intentionally contains no `LineString`
 features: CUMTA's official GTFS was unavailable during this run, and tracing a
@@ -89,7 +89,7 @@ python3 tooling/importers/chennai/fetch.py \
 Downloads go to `data/raw/chennai/`, which is ignored except for its
 `.gitignore`. `fetch.py` records response metadata, retrieval time, byte length,
 and SHA-256 in the raw manifest. `normalize.py` also emits a committed
-`import-report.json` containing checksums and timestamps for every raw artifact
+`metadata/import-report.json` containing checksums and timestamps for every raw artifact
 that contributed to the generated dataset.
 
 ## Quality rules and known limitations
@@ -124,4 +124,4 @@ model.
 
 The next data milestone is to rerun the official CUMTA download, validate its
 GTFS tables and service dates, reconcile its stop IDs with these stable station
-identities, and add official `LineString` shapes to `network.geojson`.
+identities, and add official `LineString` shapes to `modes/metro/network.geojson`.

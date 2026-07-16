@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-07-16T07:15:42.353663+00:00",
+  "operationalStationCount": 41,
+  "lineStationMembershipCount": 43,
+  "stationCoordinatesPresent": 41,
+  "stationCoordinatesMissing": 0,
+  "operationalRouteGeometryCount": 2,
+  "gtfs": {
+    "available": false,
+    "reason": "Official CUMTA feed was not retrievable during this import."
+  },
+  "warnings": [
+    "Operational station coordinates and railway alignment geometry are derived from OpenStreetMap route relations and attributed under ODbL.",
+    "CMRL uses separate URLs for Central and Alandur on each line; these are intentionally merged into stable interchange identities.",
+    "No proposed or under-construction alignment geometry is generated from schematic PDFs."
+  ]
+}

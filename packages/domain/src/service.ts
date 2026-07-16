@@ -20,6 +20,36 @@ export const serviceCalendarSchema = z.object({
 });
 export type ServiceCalendar = z.infer<typeof serviceCalendarSchema>;
 
+export const serviceDayTypeSchema = z.enum(["weekday", "saturday", "sunday-holiday"]);
+export type ServiceDayType = z.infer<typeof serviceDayTypeSchema>;
+
+export const headwayBandSchema = z.object({
+  startTime: serviceTimeSchema,
+  endTime: serviceTimeSchema,
+  headwaySeconds: z.number().int().positive(),
+  segmentPlaceIds: z.tuple([entityIdSchema, entityIdSchema]).optional(),
+  note: z.string().optional(),
+});
+export type HeadwayBand = z.infer<typeof headwayBandSchema>;
+
+export const frequencyServicePatternSchema = z.object({
+  id: entityIdSchema,
+  lineId: entityIdSchema,
+  dayType: serviceDayTypeSchema,
+  runtimeSeconds: z.number().int().positive().optional(),
+  directions: z.array(z.object({
+    directionId: z.string().min(1),
+    originPlaceId: entityIdSchema,
+    destinationPlaceId: entityIdSchema,
+    firstDepartureTime: serviceTimeSchema,
+    lastDepartureTime: serviceTimeSchema,
+  })).min(2),
+  headwayBands: z.array(headwayBandSchema).min(1),
+  sourceIds: z.array(entityIdSchema).min(1),
+  estimationOnly: z.boolean().default(false),
+});
+export type FrequencyServicePattern = z.infer<typeof frequencyServicePatternSchema>;
+
 export const stopCallSchema = z.object({
   sequence: z.number().int().nonnegative(),
   placeId: entityIdSchema,
