@@ -14,3 +14,4 @@ __pycache__/
 data/raw/**
 !data/raw/**/.gitkeep
 !data/raw/**/.gitignore
+.vercel/

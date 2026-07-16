@@ -2,6 +2,8 @@
 
 An open, source-aware atlas for exploring public transport networks around the world.
 
+**Live app:** [transit-atlas.vercel.app](https://transit-atlas.vercel.app)
+
 Transit Atlas begins with Chennai Metro and MTC buses, but the repository is organized around portable regional bundles rather than Chennai-specific application logic. Each city declares its capabilities, datasets, sources, quality reports, and transport modes through a versioned manifest.
 
 ## What works today
@@ -46,6 +48,15 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000).
 
 The development command has a 1.5 GB Node heap cap and uses the Webpack dev server to prevent runaway compiler memory usage observed with an earlier local configuration.
+
+## Deploy
+
+The repository includes a root `vercel.json` for its npm-workspace layout. After authenticating with Vercel CLI:
+
+```bash
+vercel link --project transit-atlas
+vercel deploy --prod
+```
 
 ## Validate changes
 
