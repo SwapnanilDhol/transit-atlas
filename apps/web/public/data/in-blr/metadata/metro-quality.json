@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-16T14:07:01.304718+00:00",
+  "status": "passed-with-warnings",
+  "operationalLineCount": 3,
+  "uniqueStationCount": 84,
+  "lineStationMembershipCount": 85,
+  "routeGeometrySegmentCount": 89,
+  "warnings": [
+    "Geometry and station points are sourced from OpenStreetMap route relations under ODbL.",
+    "Only operational Purple, Green, and Yellow lines are included in this first Bengaluru bundle.",
+    "No official schedule or realtime feed is included; the UI must not imply live service."
+  ]
+}

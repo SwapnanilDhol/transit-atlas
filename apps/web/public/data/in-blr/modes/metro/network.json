@@ -1,0 +1,1156 @@
+{
+  "schemaVersion": "1.0.0",
+  "region": {
+    "id": "in-blr",
+    "name": "Bengaluru",
+    "countryCode": "IN",
+    "timezone": "Asia/Kolkata"
+  },
+  "operator": {
+    "id": "in-blr-bmrcl",
+    "name": "Bangalore Metro Rail Corporation Limited",
+    "shortName": "BMRCL",
+    "mode": "metro"
+  },
+  "lines": [
+    {
+      "id": "bmrcl-purple",
+      "name": "Purple Line",
+      "officialCorridor": "Namma Metro",
+      "color": "#8A3FFC",
+      "status": "operational",
+      "stationIds": [
+        "in-blr-bmrcl-whitefield-kadugodi",
+        "in-blr-bmrcl-hopefarm-channasandra",
+        "in-blr-bmrcl-kadugodi-tree-park",
+        "in-blr-bmrcl-pattandur-agrahara",
+        "in-blr-bmrcl-sri-sathya-sai-hospital",
+        "in-blr-bmrcl-nallurahalli",
+        "in-blr-bmrcl-kundalahalli",
+        "in-blr-bmrcl-seetharampalya",
+        "in-blr-bmrcl-hoodi",
+        "in-blr-bmrcl-garudacharpalya",
+        "in-blr-bmrcl-singayyanapalya",
+        "in-blr-bmrcl-krishnarajapura",
+        "in-blr-bmrcl-benniganahalli",
+        "in-blr-bmrcl-baiyappanahalli",
+        "in-blr-bmrcl-swami-vivekananda-road",
+        "in-blr-bmrcl-indiranagar",
+        "in-blr-bmrcl-halasuru",
+        "in-blr-bmrcl-trinity",
+        "in-blr-bmrcl-mahatma-gandhi-road",
+        "in-blr-bmrcl-cubbon-park",
+        "in-blr-bmrcl-dr-b-r-ambedkar-station-vidhana-soudha",
+        "in-blr-bmrcl-sir-m-visvesvaraya-stn-central-college",
+        "in-blr-bmrcl-nadaprabhu-kempegowda-station-majestic-purple-line",
+        "in-blr-bmrcl-krantivira-sangolli-rayanna-railway-station",
+        "in-blr-bmrcl-magadi-road",
+        "in-blr-bmrcl-sri-balagangadharanatha-swamiji-stn-hosahalli",
+        "in-blr-bmrcl-vijayanagara",
+        "in-blr-bmrcl-attiguppe",
+        "in-blr-bmrcl-deepanjali-nagar",
+        "in-blr-bmrcl-mysore-road",
+        "in-blr-bmrcl-pantharapalya-nayandahalli",
+        "in-blr-bmrcl-rajarajeshwari-nagar",
+        "in-blr-bmrcl-jnanabharathi",
+        "in-blr-bmrcl-pattanagere",
+        "in-blr-bmrcl-kengeri-bus-terminal",
+        "in-blr-bmrcl-kengeri",
+        "in-blr-bmrcl-challaghatta"
+      ],
+      "terminals": [
+        "Whitefield (Kadugodi)",
+        "Challaghatta"
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/relation/1798771"
+    },
+    {
+      "id": "bmrcl-green",
+      "name": "Green Line",
+      "officialCorridor": "Namma Metro",
+      "color": "#009B77",
+      "status": "operational",
+      "stationIds": [
+        "in-blr-bmrcl-silk-institute",
+        "in-blr-bmrcl-thalaghattapura",
+        "in-blr-bmrcl-vajarahalli",
+        "in-blr-bmrcl-doddakallasandra",
+        "in-blr-bmrcl-konanakunte-cross",
+        "in-blr-bmrcl-yelachenahalli",
+        "in-blr-bmrcl-jaya-prakash-nagar",
+        "in-blr-bmrcl-banashankari",
+        "in-blr-bmrcl-rashtreeya-vidyalaya-road",
+        "in-blr-bmrcl-jayanagar",
+        "in-blr-bmrcl-south-end-circle",
+        "in-blr-bmrcl-lalbagh",
+        "in-blr-bmrcl-national-college",
+        "in-blr-bmrcl-krishna-rajendra-market",
+        "in-blr-bmrcl-chickpete",
+        "in-blr-bmrcl-nadaprabhu-kempegowda-station-majestic-green-line",
+        "in-blr-bmrcl-mantri-square-sampige-road",
+        "in-blr-bmrcl-srirampura",
+        "in-blr-bmrcl-mahakavi-kuvempu-road",
+        "in-blr-bmrcl-rajajinagar",
+        "in-blr-bmrcl-mahalakshmi",
+        "in-blr-bmrcl-sandal-soap-factory",
+        "in-blr-bmrcl-yeshwantpur",
+        "in-blr-bmrcl-goraguntepalya",
+        "in-blr-bmrcl-peenya",
+        "in-blr-bmrcl-peenya-industry",
+        "in-blr-bmrcl-jalahalli",
+        "in-blr-bmrcl-dasarahalli",
+        "in-blr-bmrcl-nagasandra",
+        "in-blr-bmrcl-manjunathanagara",
+        "in-blr-bmrcl-chikkabidarakallu",
+        "in-blr-bmrcl-madavara"
+      ],
+      "terminals": [
+        "Madavara",
+        "Silk Institute"
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/relation/1798772"
+    },
+    {
+      "id": "bmrcl-yellow",
+      "name": "Yellow Line",
+      "officialCorridor": "Namma Metro",
+      "color": "#E3B505",
+      "status": "operational",
+      "stationIds": [
+        "in-blr-bmrcl-delta-electronics-bommasandra",
+        "in-blr-bmrcl-biocon-hebbagodi",
+        "in-blr-bmrcl-huskur-road",
+        "in-blr-bmrcl-infosys-foundation-konappana-agrahara",
+        "in-blr-bmrcl-electronic-city",
+        "in-blr-bmrcl-beratena-agrahara",
+        "in-blr-bmrcl-hosa-road",
+        "in-blr-bmrcl-singasandra",
+        "in-blr-bmrcl-kudlu-gate",
+        "in-blr-bmrcl-hongasandra",
+        "in-blr-bmrcl-bommanahalli",
+        "in-blr-bmrcl-central-silk-board",
+        "in-blr-bmrcl-btm-layout",
+        "in-blr-bmrcl-jayadeva-hospital",
+        "in-blr-bmrcl-ragigudda",
+        "in-blr-bmrcl-rashtreeya-vidyalaya-road"
+      ],
+      "terminals": [
+        "Rashtreeya Vidyalaya Road",
+        "Delta Electronics Bommasandra"
+      ],
+      "sourceUrl": "https://www.openstreetmap.org/relation/19421927"
+    }
+  ],
+  "stations": [
+    {
+      "id": "in-blr-bmrcl-whitefield-kadugodi",
+      "name": "Whitefield (Kadugodi)",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647017",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7578215,
+      "latitude": 12.99519
+    },
+    {
+      "id": "in-blr-bmrcl-hopefarm-channasandra",
+      "name": "Hopefarm Channasandra",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647019",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7538642,
+      "latitude": 12.9872074
+    },
+    {
+      "id": "in-blr-bmrcl-kadugodi-tree-park",
+      "name": "Kadugodi Tree Park",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647021",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7465715,
+      "latitude": 12.9857936
+    },
+    {
+      "id": "in-blr-bmrcl-pattandur-agrahara",
+      "name": "Pattandur Agrahara",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647023",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7372451,
+      "latitude": 12.9875935
+    },
+    {
+      "id": "in-blr-bmrcl-sri-sathya-sai-hospital",
+      "name": "Sri Sathya Sai Hospital",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647025",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7274963,
+      "latitude": 12.9807354
+    },
+    {
+      "id": "in-blr-bmrcl-nallurahalli",
+      "name": "Nallurahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647027",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7243495,
+      "latitude": 12.9766126
+    },
+    {
+      "id": "in-blr-bmrcl-kundalahalli",
+      "name": "Kundalahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647029",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.715061,
+      "latitude": 12.9776292
+    },
+    {
+      "id": "in-blr-bmrcl-seetharampalya",
+      "name": "Seetharampalya",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1576856364",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7086129,
+      "latitude": 12.9813697
+    },
+    {
+      "id": "in-blr-bmrcl-hoodi",
+      "name": "Hoodi",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/2643922981",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7118453,
+      "latitude": 12.9891327
+    },
+    {
+      "id": "in-blr-bmrcl-garudacharpalya",
+      "name": "Garudacharpalya",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647033",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.7032966,
+      "latitude": 12.9935165
+    },
+    {
+      "id": "in-blr-bmrcl-singayyanapalya",
+      "name": "Singayyanapalya",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/10761647035",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.6921457,
+      "latitude": 12.9966967
+    },
+    {
+      "id": "in-blr-bmrcl-krishnarajapura",
+      "name": "Krishnarajapura",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/4548694631",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.6778421,
+      "latitude": 12.9998836
+    },
+    {
+      "id": "in-blr-bmrcl-benniganahalli",
+      "name": "Benniganahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/4548694596",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.6684788,
+      "latitude": 12.996496
+    },
+    {
+      "id": "in-blr-bmrcl-baiyappanahalli",
+      "name": "Baiyappanahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/568363732",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.652392,
+      "latitude": 12.9906745
+    },
+    {
+      "id": "in-blr-bmrcl-swami-vivekananda-road",
+      "name": "Swami Vivekananda Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/850782866",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.6449072,
+      "latitude": 12.9859128
+    },
+    {
+      "id": "in-blr-bmrcl-indiranagar",
+      "name": "Indiranagar",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/850782880",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.6386592,
+      "latitude": 12.9783079
+    },
+    {
+      "id": "in-blr-bmrcl-halasuru",
+      "name": "Halasuru",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/431524247",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.626705,
+      "latitude": 12.9764915
+    },
+    {
+      "id": "in-blr-bmrcl-trinity",
+      "name": "Trinity",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/428847118",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.617013,
+      "latitude": 12.9729953
+    },
+    {
+      "id": "in-blr-bmrcl-mahatma-gandhi-road",
+      "name": "Mahatma Gandhi Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/850782876",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.6062979,
+      "latitude": 12.9756285
+    },
+    {
+      "id": "in-blr-bmrcl-cubbon-park",
+      "name": "Cubbon Park",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/3343297219",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.597562,
+      "latitude": 12.9808954
+    },
+    {
+      "id": "in-blr-bmrcl-dr-b-r-ambedkar-station-vidhana-soudha",
+      "name": "Dr. B. R. Ambedkar Station, Vidhana Soudha",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/568344479",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5911088,
+      "latitude": 12.9779727
+    },
+    {
+      "id": "in-blr-bmrcl-sir-m-visvesvaraya-stn-central-college",
+      "name": "Sir M. Visvesvaraya Stn., Central College",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1087823607",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5842326,
+      "latitude": 12.9745014
+    },
+    {
+      "id": "in-blr-bmrcl-nadaprabhu-kempegowda-station-majestic-purple-line",
+      "name": "Nadaprabhu Kempegowda Station, Majestic (Purple Line)",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5305932617",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5728057,
+      "latitude": 12.9756704
+    },
+    {
+      "id": "in-blr-bmrcl-krantivira-sangolli-rayanna-railway-station",
+      "name": "Krantivira Sangolli Rayanna Railway Station",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1560067666",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5653792,
+      "latitude": 12.9758581
+    },
+    {
+      "id": "in-blr-bmrcl-magadi-road",
+      "name": "Magadi Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1820408689",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5553564,
+      "latitude": 12.975608
+    },
+    {
+      "id": "in-blr-bmrcl-sri-balagangadharanatha-swamiji-stn-hosahalli",
+      "name": "Sri Balagangadharanatha Swamiji Stn., Hosahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1565099143",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5456189,
+      "latitude": 12.9741737
+    },
+    {
+      "id": "in-blr-bmrcl-vijayanagara",
+      "name": "Vijayanagara",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1565099088",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5374285,
+      "latitude": 12.9709391
+    },
+    {
+      "id": "in-blr-bmrcl-attiguppe",
+      "name": "Attiguppe",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1565099087",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5335932,
+      "latitude": 12.9618581
+    },
+    {
+      "id": "in-blr-bmrcl-deepanjali-nagar",
+      "name": "Deepanjali Nagar",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/568345184",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5370399,
+      "latitude": 12.9520466
+    },
+    {
+      "id": "in-blr-bmrcl-mysore-road",
+      "name": "Mysore Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/568345526",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5300896,
+      "latitude": 12.9466619
+    },
+    {
+      "id": "in-blr-bmrcl-pantharapalya-nayandahalli",
+      "name": "Pantharapalya - Nayandahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1576912437",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.525127,
+      "latitude": 12.9416608
+    },
+    {
+      "id": "in-blr-bmrcl-rajarajeshwari-nagar",
+      "name": "Rajarajeshwari Nagar",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1576912366",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5196666,
+      "latitude": 12.9366362
+    },
+    {
+      "id": "in-blr-bmrcl-jnanabharathi",
+      "name": "Jnanabharathi",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/9048813176",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.5124194,
+      "latitude": 12.935405
+    },
+    {
+      "id": "in-blr-bmrcl-pattanagere",
+      "name": "Pattanagere",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/9048813174",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.4983713,
+      "latitude": 12.9242399
+    },
+    {
+      "id": "in-blr-bmrcl-kengeri-bus-terminal",
+      "name": "Kengeri Bus Terminal",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/9048813173",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.4878613,
+      "latitude": 12.9146648
+    },
+    {
+      "id": "in-blr-bmrcl-kengeri",
+      "name": "Kengeri",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/9048813172",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.4765871,
+      "latitude": 12.9078971
+    },
+    {
+      "id": "in-blr-bmrcl-challaghatta",
+      "name": "Challaghatta",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/11248381605",
+      "lineIds": [
+        "bmrcl-purple"
+      ],
+      "longitude": 77.4612476,
+      "latitude": 12.897289
+    },
+    {
+      "id": "in-blr-bmrcl-silk-institute",
+      "name": "Silk Institute",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/7235263991",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5299083,
+      "latitude": 12.8616919
+    },
+    {
+      "id": "in-blr-bmrcl-thalaghattapura",
+      "name": "Thalaghattapura",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198459",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5383625,
+      "latitude": 12.8714243
+    },
+    {
+      "id": "in-blr-bmrcl-vajarahalli",
+      "name": "Vajarahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198460",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.544745,
+      "latitude": 12.8775389
+    },
+    {
+      "id": "in-blr-bmrcl-doddakallasandra",
+      "name": "Doddakallasandra",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/7235254982",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.552751,
+      "latitude": 12.8846862
+    },
+    {
+      "id": "in-blr-bmrcl-konanakunte-cross",
+      "name": "Konanakunte Cross",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/7235254980",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5626569,
+      "latitude": 12.8889872
+    },
+    {
+      "id": "in-blr-bmrcl-yelachenahalli",
+      "name": "Yelachenahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198464",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5700982,
+      "latitude": 12.8960662
+    },
+    {
+      "id": "in-blr-bmrcl-jaya-prakash-nagar",
+      "name": "Jaya Prakash Nagar",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198465",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5731076,
+      "latitude": 12.907476
+    },
+    {
+      "id": "in-blr-bmrcl-banashankari",
+      "name": "Banashankari",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198466",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5735786,
+      "latitude": 12.9152242
+    },
+    {
+      "id": "in-blr-bmrcl-rashtreeya-vidyalaya-road",
+      "name": "Rashtreeya Vidyalaya Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198467",
+      "lineIds": [
+        "bmrcl-green",
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.5802479,
+      "latitude": 12.9213321
+    },
+    {
+      "id": "in-blr-bmrcl-jayanagar",
+      "name": "Jayanagar",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198470",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.580123,
+      "latitude": 12.9295065
+    },
+    {
+      "id": "in-blr-bmrcl-south-end-circle",
+      "name": "South End Circle",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198471",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5800349,
+      "latitude": 12.9382617
+    },
+    {
+      "id": "in-blr-bmrcl-lalbagh",
+      "name": "Lalbagh",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198472",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5799954,
+      "latitude": 12.9465339
+    },
+    {
+      "id": "in-blr-bmrcl-national-college",
+      "name": "National College",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198474",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5736697,
+      "latitude": 12.9505263
+    },
+    {
+      "id": "in-blr-bmrcl-krishna-rajendra-market",
+      "name": "Krishna Rajendra Market",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198473",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5746404,
+      "latitude": 12.960896
+    },
+    {
+      "id": "in-blr-bmrcl-chickpete",
+      "name": "Chickpete",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198469",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5745314,
+      "latitude": 12.9669249
+    },
+    {
+      "id": "in-blr-bmrcl-nadaprabhu-kempegowda-station-majestic-green-line",
+      "name": "Nadaprabhu Kempegowda Station, Majestic (Green Line)",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198468",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5728675,
+      "latitude": 12.9759557
+    },
+    {
+      "id": "in-blr-bmrcl-mantri-square-sampige-road",
+      "name": "Mantri Square Sampige Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198623",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5706929,
+      "latitude": 12.9904282
+    },
+    {
+      "id": "in-blr-bmrcl-srirampura",
+      "name": "Srirampura",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/1565099078",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5632993,
+      "latitude": 12.9964948
+    },
+    {
+      "id": "in-blr-bmrcl-mahakavi-kuvempu-road",
+      "name": "Mahakavi Kuvempu Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198631",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5568746,
+      "latitude": 12.9984697
+    },
+    {
+      "id": "in-blr-bmrcl-rajajinagar",
+      "name": "Rajajinagar",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198632",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5496166,
+      "latitude": 13.0005232
+    },
+    {
+      "id": "in-blr-bmrcl-mahalakshmi",
+      "name": "Mahalakshmi",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198630",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5487834,
+      "latitude": 13.0080774
+    },
+    {
+      "id": "in-blr-bmrcl-sandal-soap-factory",
+      "name": "Sandal Soap Factory",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198629",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5539915,
+      "latitude": 13.0147178
+    },
+    {
+      "id": "in-blr-bmrcl-yeshwantpur",
+      "name": "Yeshwantpur",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198627",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5497052,
+      "latitude": 13.0232981
+    },
+    {
+      "id": "in-blr-bmrcl-goraguntepalya",
+      "name": "Goraguntepalya",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198626",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5404372,
+      "latitude": 13.028613
+    },
+    {
+      "id": "in-blr-bmrcl-peenya",
+      "name": "Peenya",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198625",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5331801,
+      "latitude": 13.0329814
+    },
+    {
+      "id": "in-blr-bmrcl-peenya-industry",
+      "name": "Peenya Industry",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5760198620",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5254867,
+      "latitude": 13.0362716
+    },
+    {
+      "id": "in-blr-bmrcl-jalahalli",
+      "name": "Jalahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5954688578",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5197223,
+      "latitude": 13.0393735
+    },
+    {
+      "id": "in-blr-bmrcl-dasarahalli",
+      "name": "Dasarahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5954688572",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5125345,
+      "latitude": 13.0432196
+    },
+    {
+      "id": "in-blr-bmrcl-nagasandra",
+      "name": "Nagasandra",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/5954688564",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.5001342,
+      "latitude": 13.0479383
+    },
+    {
+      "id": "in-blr-bmrcl-manjunathanagara",
+      "name": "Manjunathanagara",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/12316543765",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.4944407,
+      "latitude": 13.0500685
+    },
+    {
+      "id": "in-blr-bmrcl-chikkabidarakallu",
+      "name": "Chikkabidarakallu",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/12316543762",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.4879101,
+      "latitude": 13.0523412
+    },
+    {
+      "id": "in-blr-bmrcl-madavara",
+      "name": "Madavara",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/12316543760",
+      "lineIds": [
+        "bmrcl-green"
+      ],
+      "longitude": 77.4728018,
+      "latitude": 13.0574004
+    },
+    {
+      "id": "in-blr-bmrcl-delta-electronics-bommasandra",
+      "name": "Delta Electronics Bommasandra",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007538",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6879957,
+      "latitude": 12.8197552
+    },
+    {
+      "id": "in-blr-bmrcl-biocon-hebbagodi",
+      "name": "Biocon Hebbagodi",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007540",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6812303,
+      "latitude": 12.8294441
+    },
+    {
+      "id": "in-blr-bmrcl-huskur-road",
+      "name": "Huskur Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007542",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6771361,
+      "latitude": 12.839432
+    },
+    {
+      "id": "in-blr-bmrcl-infosys-foundation-konappana-agrahara",
+      "name": "Infosys Foundation Konappana Agrahara",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007548",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6709184,
+      "latitude": 12.8467985
+    },
+    {
+      "id": "in-blr-bmrcl-electronic-city",
+      "name": "Electronic City",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007556",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6632379,
+      "latitude": 12.8567984
+    },
+    {
+      "id": "in-blr-bmrcl-beratena-agrahara",
+      "name": "Beratena Agrahara",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007562",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6575832,
+      "latitude": 12.8642294
+    },
+    {
+      "id": "in-blr-bmrcl-hosa-road",
+      "name": "Hosa Road",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007564",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6521471,
+      "latitude": 12.8710849
+    },
+    {
+      "id": "in-blr-bmrcl-singasandra",
+      "name": "Singasandra",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007567",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6446126,
+      "latitude": 12.8811794
+    },
+    {
+      "id": "in-blr-bmrcl-kudlu-gate",
+      "name": "Kudlu Gate",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007569",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6389484,
+      "latitude": 12.8903178
+    },
+    {
+      "id": "in-blr-bmrcl-hongasandra",
+      "name": "Hongasandra",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007570",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6316985,
+      "latitude": 12.9021241
+    },
+    {
+      "id": "in-blr-bmrcl-bommanahalli",
+      "name": "Bommanahalli",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007572",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6261256,
+      "latitude": 12.9111955
+    },
+    {
+      "id": "in-blr-bmrcl-central-silk-board",
+      "name": "Central Silk Board",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/12040966324",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.620117,
+      "latitude": 12.9164026
+    },
+    {
+      "id": "in-blr-bmrcl-btm-layout",
+      "name": "BTM Layout",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007576",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.6076327,
+      "latitude": 12.916573
+    },
+    {
+      "id": "in-blr-bmrcl-jayadeva-hospital",
+      "name": "Jayadeva Hospital",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046007577",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.5997303,
+      "latitude": 12.9167282
+    },
+    {
+      "id": "in-blr-bmrcl-ragigudda",
+      "name": "Ragigudda",
+      "operatorId": "in-blr-bmrcl",
+      "status": "operational",
+      "sourceUrl": "https://www.openstreetmap.org/node/13046011005",
+      "lineIds": [
+        "bmrcl-yellow"
+      ],
+      "longitude": 77.5877835,
+      "latitude": 12.9170748
+    }
+  ],
+  "generatedAt": "2026-07-16T14:07:01.304718+00:00"
+}

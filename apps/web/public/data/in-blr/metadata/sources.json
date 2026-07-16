@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "id": "osm-namma-metro-purple",
+      "publisher": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/relation/1798771",
+      "license": "ODbL-1.0",
+      "mode": "metro",
+      "lineId": "bmrcl-purple"
+    },
+    {
+      "id": "osm-namma-metro-green",
+      "publisher": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/relation/1798772",
+      "license": "ODbL-1.0",
+      "mode": "metro",
+      "lineId": "bmrcl-green"
+    },
+    {
+      "id": "osm-namma-metro-yellow",
+      "publisher": "OpenStreetMap contributors",
+      "url": "https://www.openstreetmap.org/relation/19421927",
+      "license": "ODbL-1.0",
+      "mode": "metro",
+      "lineId": "bmrcl-yellow"
+    }
+  ]
+}

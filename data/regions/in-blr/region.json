@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "in-blr",
+  "slug": "bengaluru",
+  "name": {
+    "default": "Bengaluru",
+    "translations": {
+      "kn": "ಬೆಂಗಳೂರು"
+    }
+  },
+  "kind": "metro-area",
+  "countryCode": "IN",
+  "timezone": "Asia/Kolkata",
+  "languages": ["en", "kn"],
+  "defaultLocale": "en",
+  "viewport": {
+    "center": {
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    "zoom": 10.5,
+    "boundingBox": {
+      "south": 12.75,
+      "west": 77.35,
+      "north": 13.25,
+      "east": 77.85
+    }
+  },
+  "supportedModes": ["metro"]
+}

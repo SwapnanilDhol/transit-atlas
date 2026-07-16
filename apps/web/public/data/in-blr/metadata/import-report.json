@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-07-16T14:07:01.304718+00:00",
+  "artifacts": [
+    {
+      "path": "data/raw/bengaluru/osm/purple-1798771.json",
+      "sha256": "c19b95b009b94c4fb0bb2c63e89d36fbba16c7b920bce30698ac65e077751acb",
+      "bytes": 210026
+    },
+    {
+      "path": "data/raw/bengaluru/osm/green-1798772.json",
+      "sha256": "dc69f8aa3a91a95ad3042025a7620445aa9d2413c2a4a98da8e62c32e294d389",
+      "bytes": 126541
+    },
+    {
+      "path": "data/raw/bengaluru/osm/yellow-19421927.json",
+      "sha256": "42029af1c03f42d1d131ce2f1439b97444abe8767f5dd49a999eda5f38831eb8",
+      "bytes": 45652
+    }
+  ]
+}

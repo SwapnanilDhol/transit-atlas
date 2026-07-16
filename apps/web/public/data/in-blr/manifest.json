@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "regionId": "in-blr",
+  "bundleVersion": "2026-07-16.1",
+  "updatedAt": "2026-07-16T00:00:00Z",
+  "datasets": [
+    { "id": "metro-network", "mode": "metro", "kind": "network", "path": "modes/metro/network.json", "format": "json" },
+    { "id": "metro-map", "mode": "metro", "kind": "geometry", "path": "modes/metro/network.geojson", "format": "geojson" },
+    { "id": "metro-stations", "mode": "metro", "kind": "places", "path": "modes/metro/stations.geojson", "format": "geojson" },
+    { "id": "source-registry", "kind": "provenance", "path": "metadata/sources.json", "format": "json" },
+    { "id": "metro-quality", "mode": "metro", "kind": "quality", "path": "metadata/metro-quality.json", "format": "json" },
+    { "id": "import-report", "kind": "provenance", "path": "metadata/import-report.json", "format": "json" }
+  ],
+  "capabilities": {
+    "catalog": true,
+    "map": true,
+    "schedule": false,
+    "journeyPlanning": false,
+    "realtime": false,
+    "futureProjects": false
+  }
+}

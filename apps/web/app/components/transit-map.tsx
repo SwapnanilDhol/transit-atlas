@@ -10,6 +10,11 @@ import type {
 const MAP_STYLE = "https://tiles.openfreemap.org/styles/positron";
 
 type TransitMapProps = {
+  regionId: string;
+  regionName: string;
+  center: [number, number];
+  zoom: number;
+  hasBus: boolean;
   activeLayers: string[];
   selectedLine: string | null;
   mode: "metro" | "bus";
@@ -25,7 +30,18 @@ const lineColors: Record<string, string> = {
   red: "#ff5c5c",
 };
 
-export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute, onReady }: TransitMapProps) {
+export function TransitMap({
+  regionId,
+  regionName,
+  center,
+  zoom,
+  hasBus,
+  activeLayers,
+  selectedLine,
+  mode,
+  selectedBusRoute,
+  onReady,
+}: TransitMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const networkRef = useRef<GeoJSON.FeatureCollection | null>(null);
@@ -45,8 +61,8 @@ export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute,
       const map = new maplibregl.Map({
         container: containerRef.current,
         style: MAP_STYLE,
-        center: [80.235, 13.055],
-        zoom: 10.45,
+        center,
+        zoom,
         minZoom: 8,
         maxZoom: 18,
         attributionControl: false,
@@ -69,7 +85,7 @@ export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute,
         onReady?.();
 
         try {
-          const networkResponse = await fetch("/data/in-maa/modes/metro/network.geojson");
+          const networkResponse = await fetch(`/data/${regionId}/modes/metro/network.geojson`);
           if (!networkResponse.ok) return;
           const data = (await networkResponse.json()) as GeoJSON.FeatureCollection;
           networkRef.current = data;
@@ -161,6 +177,10 @@ export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute,
                 lineColors.blue,
                 "green",
                 lineColors.green,
+                "purple",
+                lineColors.purple,
+                "yellow",
+                lineColors.yellow,
                 "#64736e",
               ],
               "circle-opacity": 0.9,
@@ -182,44 +202,46 @@ export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute,
             },
           });
 
-          const busStopsResponse = await fetch("/data/in-maa/modes/bus/stops.geojson");
-          if (busStopsResponse.ok) {
-            const busStops = (await busStopsResponse.json()) as GeoJSON.FeatureCollection;
-            busStopsRef.current = busStops;
-            map.addSource("bus-stops", { type: "geojson", data: busStops });
-            map.addLayer({
-              id: "bus-stops",
-              type: "circle",
-              source: "bus-stops",
-              minzoom: 9.8,
-              layout: { visibility: "none" },
-              paint: {
-                "circle-radius": ["interpolate", ["linear"], ["zoom"], 9.8, 2, 14, 4.5],
-                "circle-color": [
-                  "case",
-                  ["==", ["get", "matchMethod"], "unmatched"],
-                  "#d5a447",
-                  "#78972c",
-                ],
-                "circle-opacity": 0.76,
-                "circle-stroke-color": "#fffdf7",
-                "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9.8, 0.7, 14, 1.5],
-              },
-            });
-            map.addLayer({
-              id: "bus-selected-stops",
-              type: "circle",
-              source: "bus-stops",
-              filter: ["==", ["get", "id"], "__none__"],
-              layout: { visibility: "none" },
-              paint: {
-                "circle-radius": ["interpolate", ["linear"], ["zoom"], 9.8, 4, 14, 7],
-                "circle-color": "#d8ff64",
-                "circle-stroke-color": "#33450e",
-                "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9.8, 1.4, 14, 2.2],
-              },
-            });
-            setHasBusStops(true);
+          if (hasBus) {
+            const busStopsResponse = await fetch(`/data/${regionId}/modes/bus/stops.geojson`);
+            if (busStopsResponse.ok) {
+              const busStops = (await busStopsResponse.json()) as GeoJSON.FeatureCollection;
+              busStopsRef.current = busStops;
+              map.addSource("bus-stops", { type: "geojson", data: busStops });
+              map.addLayer({
+                id: "bus-stops",
+                type: "circle",
+                source: "bus-stops",
+                minzoom: 9.8,
+                layout: { visibility: "none" },
+                paint: {
+                  "circle-radius": ["interpolate", ["linear"], ["zoom"], 9.8, 2, 14, 4.5],
+                  "circle-color": [
+                    "case",
+                    ["==", ["get", "matchMethod"], "unmatched"],
+                    "#d5a447",
+                    "#78972c",
+                  ],
+                  "circle-opacity": 0.76,
+                  "circle-stroke-color": "#fffdf7",
+                  "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9.8, 0.7, 14, 1.5],
+                },
+              });
+              map.addLayer({
+                id: "bus-selected-stops",
+                type: "circle",
+                source: "bus-stops",
+                filter: ["==", ["get", "id"], "__none__"],
+                layout: { visibility: "none" },
+                paint: {
+                  "circle-radius": ["interpolate", ["linear"], ["zoom"], 9.8, 4, 14, 7],
+                  "circle-color": "#d8ff64",
+                  "circle-stroke-color": "#33450e",
+                  "circle-stroke-width": ["interpolate", ["linear"], ["zoom"], 9.8, 1.4, 14, 2.2],
+                },
+              });
+              setHasBusStops(true);
+            }
           }
 
           setHasNetwork(true);
@@ -238,7 +260,7 @@ export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute,
       mapRef.current?.remove();
       mapRef.current = null;
     };
-  }, [onReady]);
+  }, [center, hasBus, onReady, regionId, zoom]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -393,5 +415,5 @@ export function TransitMap({ activeLayers, selectedLine, mode, selectedBusRoute,
     }
   }, [hasBusStops, hasNetwork, mode, selectedBusRoute, selectedLine]);
 
-  return <div ref={containerRef} className="h-full w-full" aria-label={`Map of Chennai ${mode === "bus" ? "bus stops" : "Metro"}`} />;
+  return <div ref={containerRef} className="h-full w-full" aria-label={`Map of ${regionName} ${mode === "bus" ? "bus stops" : "Metro"}`} />;
 }

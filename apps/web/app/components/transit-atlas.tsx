@@ -90,7 +90,18 @@ type Line = {
   description: string;
 };
 
-const lines: Line[] = [
+type RegionId = "in-maa" | "in-blr";
+
+type RegionProfile = {
+  id: RegionId;
+  name: string;
+  center: [number, number];
+  zoom: number;
+  hasBus: boolean;
+  lines: Line[];
+};
+
+const chennaiLines: Line[] = [
   {
     id: "blue",
     sourceId: "cmrl-blue",
@@ -145,11 +156,67 @@ const lines: Line[] = [
   },
 ];
 
+const bengaluruLines: Line[] = [
+  {
+    id: "purple",
+    sourceId: "bmrcl-purple",
+    label: "Purple line",
+    corridor: "East–west corridor",
+    detail: "Whitefield (Kadugodi) · Challaghatta",
+    color: "#8A3FFC",
+    status: "Open",
+    stations: 37,
+    description: "Bengaluru's east–west spine through Indiranagar, Majestic, Kengeri and Whitefield.",
+  },
+  {
+    id: "green",
+    sourceId: "bmrcl-green",
+    label: "Green line",
+    corridor: "North–south corridor",
+    detail: "Madavara · Silk Institute",
+    color: "#009B77",
+    status: "Open",
+    stations: 32,
+    description: "The north–south corridor linking Madavara, Majestic, Jayanagar and Silk Institute.",
+  },
+  {
+    id: "yellow",
+    sourceId: "bmrcl-yellow",
+    label: "Yellow line",
+    corridor: "Electronics corridor",
+    detail: "RV Road · Bommasandra",
+    color: "#E3B505",
+    status: "Open",
+    stations: 16,
+    description: "The southern technology corridor from RV Road to Electronic City and Bommasandra.",
+  },
+];
+
+const regionProfiles: Record<RegionId, RegionProfile> = {
+  "in-maa": {
+    id: "in-maa",
+    name: "Chennai",
+    center: [80.235, 13.055],
+    zoom: 10.45,
+    hasBus: true,
+    lines: chennaiLines,
+  },
+  "in-blr": {
+    id: "in-blr",
+    name: "Bengaluru",
+    center: [77.5946, 12.9716],
+    zoom: 10.5,
+    hasBus: false,
+    lines: bengaluruLines,
+  },
+};
+
 const visibleLayers = ["operational", "under-construction", "proposed"];
 
 export function TransitAtlas() {
   const reduceMotion = useReducedMotion();
   const [mobilePanelOpen, setMobilePanelOpen] = useState(false);
+  const [regionId, setRegionId] = useState<RegionId>("in-maa");
   const [selectedLine, setSelectedLine] = useState<string | null>(null);
   const [transitMode, setTransitMode] = useState<TransitMode>("metro");
   const [selectedBusRoute, setSelectedBusRoute] = useState<string | null>(null);
@@ -158,27 +225,55 @@ export function TransitAtlas() {
   const [busNetwork, setBusNetwork] = useState<BusNetworkData | null>(null);
   const [busStopReport, setBusStopReport] = useState<BusStopMatchReport | null>(null);
 
+  const profile = regionProfiles[regionId];
+
   useEffect(() => {
-    fetch("/data/in-maa/modes/metro/network.json")
+    const controller = new AbortController();
+    const request = (path: string) => fetch(path, { signal: controller.signal });
+
+    request(`/data/${regionId}/modes/metro/network.json`)
       .then((response) => (response.ok ? response.json() : null))
       .then((data: NetworkData | null) => setNetwork(data))
-      .catch(() => setNetwork(null));
-    fetch("/data/in-maa/modes/metro/service-patterns.json")
-      .then((response) => (response.ok ? response.json() : null))
-      .then((data: ServicePatternBundle | null) => setSchedule(data))
-      .catch(() => setSchedule(null));
-    fetch("/data/in-maa/modes/bus/network.json")
-      .then((response) => (response.ok ? response.json() : null))
-      .then((data: BusNetworkData | null) => setBusNetwork(data))
-      .catch(() => setBusNetwork(null));
-    fetch("/data/in-maa/modes/bus/stop-matches.json")
-      .then((response) => (response.ok ? response.json() : null))
-      .then((data: BusStopMatchReport | null) => setBusStopReport(data))
-      .catch(() => setBusStopReport(null));
-  }, []);
+      .catch(() => {
+        if (!controller.signal.aborted) setNetwork(null);
+      });
+    if (regionId === "in-maa") {
+      request(`/data/${regionId}/modes/metro/service-patterns.json`)
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data: ServicePatternBundle | null) => setSchedule(data))
+        .catch(() => {
+          if (!controller.signal.aborted) setSchedule(null);
+        });
+      request(`/data/${regionId}/modes/bus/network.json`)
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data: BusNetworkData | null) => setBusNetwork(data))
+        .catch(() => {
+          if (!controller.signal.aborted) setBusNetwork(null);
+        });
+      request(`/data/${regionId}/modes/bus/stop-matches.json`)
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data: BusStopMatchReport | null) => setBusStopReport(data))
+        .catch(() => {
+          if (!controller.signal.aborted) setBusStopReport(null);
+        });
+    }
+
+    return () => controller.abort();
+  }, [regionId]);
 
   const changeTransitMode = (mode: TransitMode) => {
     setTransitMode(mode);
+    setSelectedLine(null);
+    setSelectedBusRoute(null);
+  };
+
+  const changeRegion = (nextRegionId: RegionId) => {
+    setNetwork(null);
+    setSchedule(null);
+    setBusNetwork(null);
+    setBusStopReport(null);
+    setRegionId(nextRegionId);
+    setTransitMode("metro");
     setSelectedLine(null);
     setSelectedBusRoute(null);
   };
@@ -189,6 +284,8 @@ export function TransitAtlas() {
     <main className="h-dvh min-h-[620px] overflow-hidden bg-[#d8ded9] text-[#14221f] lg:grid lg:grid-cols-[380px_minmax(0,1fr)]">
       <aside className="z-20 hidden h-full min-h-0 flex-col border-r border-black/8 bg-[#f8f5ee] lg:flex">
         <PanelContent
+          profile={profile}
+          onRegionChange={changeRegion}
           selectedLine={selectedLine}
           onSelectLine={setSelectedLine}
           network={network}
@@ -205,6 +302,12 @@ export function TransitAtlas() {
       <section className="relative h-full min-h-0 overflow-hidden bg-[#dce2de] lg:m-3 lg:ml-0 lg:h-[calc(100dvh-24px)] lg:rounded-[30px] lg:border lg:border-black/8 lg:shadow-[0_24px_70px_rgba(27,45,39,0.13)]">
         <div className="absolute inset-0 z-0">
           <TransitMap
+            key={regionId}
+            regionId={regionId}
+            regionName={profile.name}
+            center={profile.center}
+            zoom={profile.zoom}
+            hasBus={profile.hasBus}
             activeLayers={visibleLayers}
             selectedLine={transitMode === "metro" ? selectedLine : null}
             mode={transitMode}
@@ -232,7 +335,7 @@ export function TransitAtlas() {
                   ? `MTC ${activeBusRoute.shortName} selected`
                   : `Browse ${busNetwork?.routes.length ?? "…"} MTC routes`
                 : selectedLine
-                ? `${lines.find((line) => line.id === selectedLine)?.label} selected`
+                ? `${profile.lines.find((line) => line.id === selectedLine)?.label} selected`
                 : "Select a line to explore"}
             </div>
             <button className="pressable hidden h-11 items-center gap-2 rounded-xl border border-black/8 bg-[#f8f5ee]/92 px-3.5 text-sm font-medium text-[#11201c] shadow-sm backdrop-blur-xl sm:flex">
@@ -265,7 +368,7 @@ export function TransitAtlas() {
           >
             <Search size={17} className="text-[#66716e]" />
             <span className="text-sm font-medium text-[#66716e]">{transitMode === "bus" ? "Find an MTC bus route" : "Find a station or line"}</span>
-            <span className="ml-auto rounded-lg bg-[#e8ece8] px-2 py-1 font-mono text-[10px] font-semibold text-[#66716e]">{transitMode === "bus" ? busNetwork?.routes.length ?? "…" : 41}</span>
+            <span className="ml-auto rounded-lg bg-[#e8ece8] px-2 py-1 font-mono text-[10px] font-semibold text-[#66716e]">{transitMode === "bus" ? busNetwork?.routes.length ?? "…" : network?.stations.length ?? "…"}</span>
           </button>
         </div>
 
@@ -299,6 +402,8 @@ export function TransitAtlas() {
                   </button>
                 </div>
                 <PanelContent
+                  profile={profile}
+                  onRegionChange={changeRegion}
                   selectedLine={selectedLine}
                   onSelectLine={setSelectedLine}
                   network={network}
@@ -329,6 +434,8 @@ function BrandMark() {
 }
 
 function PanelContent({
+  profile,
+  onRegionChange,
   selectedLine,
   onSelectLine,
   network,
@@ -341,6 +448,8 @@ function PanelContent({
   onSelectBusRoute,
   compact = false,
 }: {
+  profile: RegionProfile;
+  onRegionChange: (id: RegionId) => void;
   selectedLine: string | null;
   onSelectLine: (id: string | null) => void;
   network: NetworkData | null;
@@ -353,7 +462,7 @@ function PanelContent({
   onSelectBusRoute: (id: string | null) => void;
   compact?: boolean;
 }) {
-  const selected = lines.find((line) => line.id === selectedLine) ?? null;
+  const selected = profile.lines.find((line) => line.id === selectedLine) ?? null;
   const sourceLineId = selected?.sourceId;
   const selectedStations = sourceLineId
     ? network?.stations.filter((station) => station.lineIds.includes(sourceLineId)) ?? []
@@ -369,19 +478,27 @@ function PanelContent({
             <span className="rounded-md border border-black/10 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.14em] text-black/42">Local</span>
           </div>
         )}
-        <button className="pressable mb-3 flex items-center gap-2 rounded-xl border border-black/8 bg-white/65 px-3 py-2 text-xs font-medium text-[#364641] hover:bg-white">
+        <label className="relative mb-3 flex items-center gap-2 rounded-xl border border-black/8 bg-white/65 px-3 py-2 text-xs font-medium text-[#364641] hover:bg-white">
           <span className="text-base leading-none">🇮🇳</span>
-          Chennai, India
-          <ChevronDown size={13} className="ml-1 opacity-50" />
-        </button>
-        <ModeSwitcher mode={transitMode} onChange={onTransitModeChange} />
+          <select
+            value={profile.id}
+            onChange={(event) => onRegionChange(event.target.value as RegionId)}
+            className="min-w-0 flex-1 appearance-none bg-transparent pr-5 outline-none"
+            aria-label="Choose a city"
+          >
+            <option value="in-maa">Chennai, India</option>
+            <option value="in-blr">Bengaluru, India</option>
+          </select>
+          <ChevronDown size={13} className="pointer-events-none absolute right-3 opacity-50" />
+        </label>
+        {profile.hasBus && <ModeSwitcher mode={transitMode} onChange={onTransitModeChange} />}
         {transitMode === "metro" && selected ? (
           <button
             className="pressable -ml-2 mt-3 flex items-center gap-2 rounded-xl px-2.5 py-2 text-xs font-semibold text-[#52605c] hover:bg-black/[0.045] hover:text-[#14221f]"
             onClick={() => onSelectLine(null)}
           >
             <ArrowLeft size={15} />
-            All Chennai lines
+            All {profile.name} lines
           </button>
         ) : transitMode === "bus" && selectedBusRoute ? (
           <button
@@ -396,11 +513,11 @@ function PanelContent({
             <div className="mt-5 flex items-end justify-between">
               <div>
                 <p className="mb-1 font-mono text-[10px] uppercase tracking-[0.18em] text-[#587014]">{transitMode === "bus" ? "MTC directory" : "Living network"}</p>
-                <h1 className="text-[30px] font-semibold leading-[1.04] tracking-[-0.055em]">{transitMode === "bus" ? <>Chennai<br />by bus.</> : <>Chennai<br />in motion.</>}</h1>
+                <h1 className="text-[30px] font-semibold leading-[1.04] tracking-[-0.055em]">{transitMode === "bus" ? <>{profile.name}<br />by bus.</> : <>{profile.name}<br />in motion.</>}</h1>
               </div>
               <div className="mb-1 flex items-center gap-1.5 rounded-full border border-[#78972c]/20 bg-[#d8ff64]/45 px-2.5 py-1.5 text-[10px] font-semibold text-[#43590c]">
                 <span className="size-1.5 rounded-full bg-[#67821d]" />
-                {transitMode === "bus" ? `${busNetwork?.routes.length ?? "…"} routes` : "2 open"}
+                {transitMode === "bus" ? `${busNetwork?.routes.length ?? "…"} routes` : `${profile.lines.filter((line) => line.status === "Open").length} open`}
               </div>
             </div>
           </>
@@ -437,7 +554,7 @@ function PanelContent({
                 </div>
               </div>
 
-              {selected.sourceId && (
+              {selected.sourceId && schedule?.patterns.some((pattern) => pattern.lineId === selected.sourceId) && (
                 <Timetable
                   lineId={selected.sourceId}
                   schedule={schedule}
@@ -475,7 +592,7 @@ function PanelContent({
                 <span className="text-[10px] text-black/35">Choose a line</span>
               </div>
               <div className="space-y-1">
-                {lines.map((line) => (
+                {profile.lines.map((line) => (
                   <button key={line.id} onClick={() => onSelectLine(line.id)} className="pressable group flex w-full items-center gap-3 rounded-2xl border border-transparent px-2 py-2.5 text-left hover:border-black/[0.055] hover:bg-white/65">
                     <span className="relative flex h-10 w-5 shrink-0 justify-center">
                       <span className="absolute inset-y-0 w-[3px] rounded-full" style={{ background: line.color }} />

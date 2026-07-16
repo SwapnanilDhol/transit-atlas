@@ -4,11 +4,13 @@ An open, source-aware atlas for exploring public transport networks around the w
 
 **Live app:** [transit-atlas.vercel.app](https://transit-atlas.vercel.app)
 
-Transit Atlas begins with Chennai Metro and MTC buses, but the repository is organized around portable regional bundles rather than Chennai-specific application logic. Each city declares its capabilities, datasets, sources, quality reports, and transport modes through a versioned manifest.
+Transit Atlas begins with Chennai and Bengaluru, but the repository is organized around portable regional bundles rather than city-specific application logic. Each city declares its capabilities, datasets, sources, quality reports, and transport modes through a versioned manifest.
 
 ## What works today
 
-- Interactive MapLibre map for Chennai Metro and mapped MTC bus stops
+- Interactive MapLibre maps for Chennai Metro, Bengaluru Namma Metro, and mapped MTC bus stops
+- Switchable Chennai and Bengaluru regional contexts
+- Operational Bengaluru Purple, Green, and Yellow lines with 84 mapped stations
 - Operational and future Chennai Metro lines
 - Searchable station and MTC route directories
 - Readable CMRL weekday, Saturday, and Sunday/holiday timetables
@@ -89,7 +91,7 @@ Do not scrape Google Maps or submit data that cannot legally be redistributed.
 - Proposed infrastructure never enters operational routing data.
 - Incomplete coverage is reported rather than silently inferred.
 
-Chennai-specific sources and limitations are documented in [docs/chennai-data.md](docs/chennai-data.md) and [docs/chennai-service-data.md](docs/chennai-service-data.md).
+Regional sources and limitations are documented in [docs/chennai-data.md](docs/chennai-data.md), [docs/chennai-service-data.md](docs/chennai-service-data.md), and [docs/bengaluru-data.md](docs/bengaluru-data.md).
 
 ## License
 

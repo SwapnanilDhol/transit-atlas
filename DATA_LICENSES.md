@@ -11,4 +11,13 @@ The MIT License applies to source code in this repository. It does not replace t
 
 Consult `data/regions/in-maa/metadata/sources.json`, quality reports, and Chennai documentation for record-level provenance and limitations.
 
+## Bengaluru (`in-blr`)
+
+- Namma Metro route geometry and station points: © OpenStreetMap contributors, Open Database License 1.0. See <https://www.openstreetmap.org/copyright>.
+- The current bundle uses the Purple, Green, and Yellow route relations identified in `data/regions/in-blr/metadata/sources.json`.
+- BMRCL is named only as the network operator. This repository does not claim that the geographic bundle is an official BMRCL dataset.
+- No schedule, realtime, ridership, fare, or future-project data is redistributed in the Bengaluru bundle.
+
+Consult `data/regions/in-blr/metadata/sources.json`, `metadata/metro-quality.json`, and [the Bengaluru data notes](docs/bengaluru-data.md) before reuse.
+
 Contributors must add equivalent licensing notes for each new region.
