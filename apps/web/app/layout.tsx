@@ -14,14 +14,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Transit Atlas — Chennai",
+  title: {
+    default: "Transit Atlas",
+    template: "%s — Transit Atlas",
+  },
   description:
-    "Explore the Chennai Metro network today, under construction, and next.",
+    "Explore public transport networks and stations across cities worldwide.",
 };
 
 export const viewport: Viewport = {
-  colorScheme: "dark",
-  themeColor: "#09110f",
+  colorScheme: "light",
+  themeColor: "#f8f5ee",
 };
 
 export default function RootLayout({

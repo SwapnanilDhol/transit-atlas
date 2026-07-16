@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { useRouter } from "next/navigation";
 import {
   ArrowLeft,
   BusFront,
@@ -211,12 +212,21 @@ const regionProfiles: Record<RegionId, RegionProfile> = {
   },
 };
 
+const regionPaths: Record<RegionId, string> = {
+  "in-maa": "/chennai-india",
+  "in-blr": "/bengaluru-india",
+};
+
 const visibleLayers = ["operational", "under-construction", "proposed"];
 
-export function TransitAtlas() {
+export function TransitAtlas({
+  initialRegionId = "in-maa",
+}: {
+  initialRegionId?: RegionId;
+}) {
+  const router = useRouter();
   const reduceMotion = useReducedMotion();
   const [mobilePanelOpen, setMobilePanelOpen] = useState(false);
-  const [regionId, setRegionId] = useState<RegionId>("in-maa");
   const [selectedLine, setSelectedLine] = useState<string | null>(null);
   const [transitMode, setTransitMode] = useState<TransitMode>("metro");
   const [selectedBusRoute, setSelectedBusRoute] = useState<string | null>(null);
@@ -225,6 +235,7 @@ export function TransitAtlas() {
   const [busNetwork, setBusNetwork] = useState<BusNetworkData | null>(null);
   const [busStopReport, setBusStopReport] = useState<BusStopMatchReport | null>(null);
 
+  const regionId = initialRegionId;
   const profile = regionProfiles[regionId];
 
   useEffect(() => {
@@ -272,10 +283,10 @@ export function TransitAtlas() {
     setSchedule(null);
     setBusNetwork(null);
     setBusStopReport(null);
-    setRegionId(nextRegionId);
     setTransitMode("metro");
     setSelectedLine(null);
     setSelectedBusRoute(null);
+    router.push(regionPaths[nextRegionId]);
   };
 
   const activeBusRoute = busNetwork?.routes.find((route) => route.id === selectedBusRoute);

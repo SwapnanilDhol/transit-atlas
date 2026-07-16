@@ -4,6 +4,8 @@ An open, source-aware atlas for exploring public transport networks around the w
 
 **Live app:** [transit-atlas.vercel.app](https://transit-atlas.vercel.app)
 
+Direct city pages: [Chennai](https://transit-atlas.vercel.app/chennai-india) · [Bengaluru](https://transit-atlas.vercel.app/bengaluru-india)
+
 Transit Atlas begins with Chennai and Bengaluru, but the repository is organized around portable regional bundles rather than city-specific application logic. Each city declares its capabilities, datasets, sources, quality reports, and transport modes through a versioned manifest.
 
 ## What works today

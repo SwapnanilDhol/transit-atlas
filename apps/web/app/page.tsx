@@ -1,5 +1,5 @@
-import { TransitAtlas } from "./components/transit-atlas";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return <TransitAtlas />;
+  redirect("/chennai-india");
 }
