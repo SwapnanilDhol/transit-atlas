@@ -332,9 +332,9 @@ export function TransitMap({
     map.setPaintProperty("transit-lines", "line-opacity", 0.16);
 
     map.setFilter("transit-selected-stations", [
-      "in",
-      selectedLine,
-      ["get", "lines"],
+      "all",
+      ["==", ["geometry-type"], "Point"],
+      ["in", selectedLine, ["get", "lines"]],
     ] as FilterSpecification);
     map.setPaintProperty(
       "transit-selected-stations",
